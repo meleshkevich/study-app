@@ -1,5 +1,7 @@
 <script setup lang="ts">
 useHead({ title: 'Procvičování' })
+
+const { questions, openQuestions } = useKnowledgeBase()
 </script>
 
 <template>
@@ -21,7 +23,7 @@ useHead({ title: 'Procvičování' })
         class="block w-full bg-teal-600 hover:bg-teal-700 active:bg-teal-800 text-white text-center rounded-2xl py-5 px-6 font-semibold text-lg shadow-sm transition-colors"
       >
         Uzavřené otázky
-        <span class="block text-sm font-normal text-teal-100 mt-0.5">25 otázek · výběr ze tří možností</span>
+        <span class="block text-sm font-normal text-teal-100 mt-0.5">{{ questions.length }} · výběr ze tří možností</span>
       </NuxtLink>
 
       <NuxtLink
@@ -29,7 +31,7 @@ useHead({ title: 'Procvičování' })
         class="block w-full bg-white hover:bg-slate-50 active:bg-slate-100 text-slate-800 text-center rounded-2xl py-5 px-6 font-semibold text-lg border border-slate-200 shadow-sm transition-colors"
       >
         Otevřené otázky
-        <span class="block text-sm font-normal text-slate-400 mt-0.5">5 otázek · vlastní odpověď</span>
+        <span class="block text-sm font-normal text-slate-400 mt-0.5">{{ openQuestions.length }} · vlastní odpověď</span>
       </NuxtLink>
     </div>
   </div>

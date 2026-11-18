@@ -64,7 +64,7 @@ function nextQuestion() {
       </div>
       <div>
         <p class="text-xl font-bold text-slate-800">Všechny otázky hotovy!</p>
-        <p class="text-slate-500 mt-1">Prošel/a jsi všech 5 otázek.</p>
+        <p class="text-slate-500 mt-1">Prošel/a jsi všech {{ openQuestions.length }} otázek.</p>
       </div>
       <button
         @click="startSession"

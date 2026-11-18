@@ -1,0 +1,4145 @@
+{
+  "schemaVersion": "1.0.0",
+  "dataset": "vseobecne-zubni-lekarstvi-exam-knowledge-base",
+  "language": "cs",
+  "purpose": "Procvičování: uzavřené otázky (jediná volba a/b/c) a otevřené otázky (vlastní odpověď a porovnání se vzorem); bez statistik",
+  "releaseDate": "2026-11-18",
+  "inputSources": [
+    {
+      "type": "original_tests",
+      "description": "Fotografie Verze 1 a Verze 2"
+    },
+    {
+      "type": "study_material",
+      "filename": "study-base.docx",
+      "pages": 54
+    },
+    {
+      "type": "external",
+      "description": "Externí české odborné a výukové zdroje, odkazy u příslušných otázek"
+    }
+  ],
+  "notes": [
+    "Správná odpověď určuje zamýšlený jediný klíč původní testové otázky.",
+    "Výrok s hodnocením qualified je zjednodušený či kontextový; nevytváří další klíč.",
+    "U vz_025 je klíč b převzat z explicitního potvrzení uživatele a terminologicky vyložen; nikoli prezentován jako nezpochybnitelný odborný konsenzus.",
+    "Odkazy v externích zdrojích podporují uvedená tvrzení v různém rozsahu. Nejedná se o certifikovanou klinickou revizi.",
+    "Toto je studijní pomůcka, nikoli návod ke klinickým zákrokům.",
+    "Otevřené otázky jsou samostatně v openQuestions; mají režim self_review a nejsou automaticky skórovány.",
+    "U otevřených otázek je modelAnswerCs stručná zkoušková odpověď; acceptedAlternativesCs a expectedElementsCs jsou pomůcky pro vlastní kontrolu, nikoli striktní algoritmus hodnocení.",
+    "Otázky gen_001–gen_012 jsou nově autorsky vytvořené podle sekcí studijního dokumentu, nikoli doslovné otázky ze zkouškových testů.",
+    "Otázky gen_013–gen_022 byly nově sestaveny výhradně podle study-base.docx; nebyly nezávisle ověřovány externími zdroji.",
+    "Nové otázky gen_023–gen_034 jsou vytvořeny výhradně podle study-base.docx bez externí verifikace."
+  ],
+  "questions": [
+    {
+      "id": "vz_001",
+      "type": "select_correct",
+      "topic": "Zubní patologie",
+      "question": "Co je správné tvrzení?",
+      "options": {
+        "a": "Na opotřebení zubů věk nemá žádný vliv",
+        "b": "Eroze vzniká působením kyselin na tvrdé zubní tkáně",
+        "c": "Eroze vzniká vlivem metabolické činnosti orálních mikroorganismů"
+      },
+      "sources": [
+        {
+          "test": "Verze 1",
+          "questionNumber": 1
+        },
+        {
+          "test": "Verze 2",
+          "questionNumber": 17
+        }
+      ],
+      "correctAnswer": "b",
+      "explanationCs": "Eroze je chemické poškození tvrdých zubních tkání kyselinami bez účasti bakterií.",
+      "studyReferences": [],
+      "externalReferences": [
+        {
+          "title": "Poškození zubů v důsledku mimojícnového refluxu",
+          "url": "https://www.prolekare.cz/casopisy/ceska-stomatologie/2022-4-11/poskozeni-zubu-v-dusledku-mimojicnoveho-refluxu-132826",
+          "language": "cs",
+          "relevance": "supports_option_b"
+        }
+      ],
+      "optionAssessments": {
+        "a": {
+          "verdict": "false",
+          "explanationCs": "Opotřebení zubů ovlivňuje i věk a délka působení mechanických vlivů.",
+          "correctedStatementCs": "Míra opotřebení zubů může s věkem narůstat."
+        },
+        "b": {
+          "verdict": "true",
+          "explanationCs": "Eroze je chemická ztráta tvrdých zubních tkání působením kyselin bez účasti bakterií.",
+          "correctedStatementCs": null
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Metabolity bakterií způsobují kariézní demineralizaci, nikoli erozi.",
+          "correctedStatementCs": "Eroze vzniká působením kyselin bez přímé účasti mikroorganismů."
+        }
+      },
+      "keyBasis": "verified_external",
+      "verificationNoteCs": null,
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "vz_002",
+      "type": "select_correct",
+      "topic": "Ortodoncie",
+      "question": "Co je správné tvrzení?",
+      "options": {
+        "a": "Předčasná ztráta dočasného špičáku má za následek jednostranný posun střední čáry",
+        "b": "Předčasná ztráta dočasného druhého moláru má za následek primární stěsnání",
+        "c": "Předčasná ztráta dočasného prvního moláru má za následek primární stěsnání"
+      },
+      "sources": [
+        {
+          "test": "Verze 1",
+          "questionNumber": 2
+        },
+        {
+          "test": "Verze 2",
+          "questionNumber": 23
+        }
+      ],
+      "correctAnswer": "a",
+      "explanationCs": "Předčasná ztráta dočasného špičáku může posunout střední čáru; ztráta místa po dočasných molárech je sekundární stěsnání.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "page": 36
+        }
+      ],
+      "externalReferences": [
+        {
+          "title": "Důsledky zanedbání a nevhodného ošetření zubního kazu v časném dětství",
+          "url": "https://www.prolekare.cz/casopisy/ceska-stomatologie/2020-1-10/dusledky-zanedbani-a-nevhodneho-osetreni-zubniho-kazu-v-casnem-detstvi-121551",
+          "language": "cs",
+          "relevance": "supports_possible_midline_shift"
+        }
+      ],
+      "optionAssessments": {
+        "a": {
+          "verdict": "qualified",
+          "explanationCs": "Jednostranná předčasná ztráta dočasného špičáku může vést k posunu střední čáry; není to nevyhnutelné.",
+          "correctedStatementCs": "Jednostranná předčasná ztráta dočasného špičáku může způsobit posun střední čáry."
+        },
+        "b": {
+          "verdict": "false",
+          "explanationCs": "Ztráta místa po předčasné ztrátě zubu vede k sekundárnímu, nikoli primárnímu stěsnání.",
+          "correctedStatementCs": "Předčasná ztráta druhého dočasného moláru může způsobit sekundární stěsnání."
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Ztráta prostoru po extrakci dočasného moláru se označuje jako sekundární stěsnání.",
+          "correctedStatementCs": "Předčasná ztráta prvního dočasného moláru může vést k sekundárnímu stěsnání."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": null,
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "vz_003",
+      "type": "select_incorrect",
+      "topic": "Kariologie",
+      "question": "Black spot, co je chybné tvrzení?",
+      "options": {
+        "a": "Při výskytu black spot je typická zvýšená kazivost zubů",
+        "b": "Vzniká metabolickou činností bakterií rodu Actinomyces",
+        "c": "Maximum výskytu je mezi 3.-5. rokem"
+      },
+      "sources": [
+        {
+          "test": "Verze 1",
+          "questionNumber": 3
+        },
+        {
+          "test": "Verze 2",
+          "questionNumber": 11
+        }
+      ],
+      "correctAnswer": "a",
+      "explanationCs": "U black stain je podle podkladů typická nižší, nikoli zvýšená kazivost; zmiňují Actinomyces a maximum ve 3.–5. roce.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "page": 39
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "false",
+          "explanationCs": "Black stain bývá spojován s nižší, nikoli zvýšenou kazivostí.",
+          "correctedStatementCs": "Při black stain bývá pozorována nižší kazivost zubů."
+        },
+        "b": {
+          "verdict": "qualified",
+          "explanationCs": "Na pigmentaci se mohou podílet chromogenní bakterie včetně aktinomycet; etiologie je komplexnější.",
+          "correctedStatementCs": "Black stain souvisí s chromogenním biofilmem a sloučeninami železa."
+        },
+        "c": {
+          "verdict": "qualified",
+          "explanationCs": "Studijní text uvádí maximum v 3.–5. roce; nejde o univerzální hranici pro všechny populace.",
+          "correctedStatementCs": "Black stain je častý v dětském věku, podle studijních podkladů zejména ve 3.–5. roce."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": null,
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "vz_004",
+      "type": "select_incorrect",
+      "topic": "Kariologie",
+      "question": "Co je chybné tvrzení?",
+      "options": {
+        "a": "ART technika je ošetření zubního kazu bez použití rotačních nástrojů a tekoucí vody",
+        "b": "Základem GIC (skloionomerní cement) je fluorokřemičité sklo",
+        "c": "Turnerův zub- nejčastěji je postižený první stálý molár"
+      },
+      "sources": [
+        {
+          "test": "Verze 1",
+          "questionNumber": 4
+        },
+        {
+          "test": "Verze 2",
+          "questionNumber": 29
+        }
+      ],
+      "correctAnswer": "c",
+      "explanationCs": "Turnerův zub nejčastěji postihuje nástupnický stálý zub po infekci dočasného zubu, často premolár. U GIC je označení fluorokřemičité sklo pouze zkratkovité, nikoli dostatečný důvod k druhé chybné odpovědi.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "page": 36
+        },
+        {
+          "document": "study-base.docx",
+          "page": 41
+        }
+      ],
+      "externalReferences": [
+        {
+          "title": "Důsledky zanedbání a nevhodného ošetření zubního kazu v časném dětství",
+          "url": "https://www.prolekare.cz/casopisy/ceska-stomatologie/2020-1-10/dusledky-zanedbani-a-nevhodneho-osetreni-zubniho-kazu-v-casnem-detstvi-121551",
+          "language": "cs",
+          "relevance": "supports_turner_tooth_mechanism"
+        },
+        {
+          "title": "K problematice poruch tvorby tvrdých zubních tkání a prořezávání zubů",
+          "url": "https://www.prolekare.cz/casopisy/ceska-stomatologie/2010-3/k-problematice-poruch-tvorby-tvrdych-zubnich-tkani-a-prorezavani-zubu-kazuistika-32254",
+          "language": "cs",
+          "relevance": "Turner defect generally associated with upper front teeth and premolars, not first molar"
+        },
+        {
+          "title": "Ošetření kazu blízkého zubní dřeni a metoda odložené exkavace",
+          "url": "https://www.prolekare.cz/casopisy/ceska-stomatologie/2021-3-17/osetreni-kazu-blizkeho-zubni-dreni-a-metoda-odlozene-exkavace-128157",
+          "language": "cs",
+          "relevance": "GIC glass contains fluoride aluminium and silicon"
+        }
+      ],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "ART používá ruční nástroje bez nutnosti rotační preparace a přívodu tekoucí vody.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "qualified",
+          "explanationCs": "Zkratkovité označení fluorokřemičité sklo popisuje část složení, ale přesněji jde o fluorohlinitokřemičité (fluoroaluminosilikátové) sklo. Ve smyslu jediného chybného výroku není b zamýšlená odpověď.",
+          "correctedStatementCs": "Základem konvenčního GIC je fluorohlinitokřemičité sklo a polyalkenová kyselina."
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Turnerova hypoplazie/hypomineralizace po zánětu dočasného zubu typicky postihuje jeho nástupce, často premoláry.",
+          "correctedStatementCs": "Turnerův zub často postihuje stálý premolár, nikoli nejčastěji první stálý molár."
+        }
+      },
+      "keyBasis": "qualified_external",
+      "verificationNoteCs": "Odpověď c je jednoznačně zamýšlena; b je chemicky zjednodušené označení skla. Při výuce nezaměňovat tuto výhradu za druhý klíč.",
+      "needsClarification": true,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "vz_005",
+      "type": "select_correct",
+      "topic": "Endodoncie",
+      "question": "Klinické rozdělení poškození pulpy podle Baumeho je:",
+      "options": {
+        "a": "Irreverzibilně postižená pulpa, nekrotická pulpa, zdravá pulpa, reverzibilně postižená pulpa",
+        "b": "Pulpitis chronica, pulpitis acuta, pulpitis chronica acutae exacerbans",
+        "c": "Pulpitis chronica clausa, pulpitis chronica aperta"
+      },
+      "sources": [
+        {
+          "test": "Verze 1",
+          "questionNumber": 6
+        },
+        {
+          "test": "Verze 2",
+          "questionNumber": 12
+        }
+      ],
+      "correctAnswer": "a",
+      "explanationCs": "Baumeho klinické dělení: zdravá, reverzibilně postižená, ireverzibilně postižená a nekrotická pulpa.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "page": 1
+        },
+        {
+          "document": "study-base.docx",
+          "page": 45
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "Jde o čtyři klinické kategorie podle Baumeho, byť v jiném pořadí.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "false",
+          "explanationCs": "Toto je výčet histopatologických typů pulpitid, nikoli Baumeho klinické dělení.",
+          "correctedStatementCs": "Baumeho klinické dělení zahrnuje zdravou, reverzibilně a ireverzibilně postiženou a nekrotickou pulpu."
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Aperta a clausa jsou chronické histopatologické formy.",
+          "correctedStatementCs": "Baumeho dělení rozlišuje čtyři klinické stavy pulpy."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": null,
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "vz_006",
+      "type": "select_correct",
+      "topic": "Záchovná stomatologie",
+      "question": "Co je správné tvrzení?",
+      "options": {
+        "a": "U fotokompozitní dostavby pomocí klíče se musí nejdříve situace v ústech otisknout nebo oskenovat",
+        "b": "Fotokompozit se do kavity vkládá v silných vrstvách",
+        "c": "Při polymeraci svítíme lampou co nejdále od fotokompozita"
+      },
+      "sources": [
+        {
+          "test": "Verze 1",
+          "questionNumber": 7
+        },
+        {
+          "test": "Verze 2",
+          "questionNumber": 5
+        }
+      ],
+      "correctAnswer": "a",
+      "explanationCs": "Pro dostavbu pomocí klíče je nutný předchozí otisk nebo sken. Silné vrstvy a příliš vzdálená polymerační lampa nejsou správným postupem.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "page": 53
+        }
+      ],
+      "externalReferences": [
+        {
+          "title": "Den výzkumných prací 2017 – rychlá polymerace kompozitů",
+          "url": "https://www.prolekare.cz/casopisy/ceska-stomatologie/2017-4/den-vyzkumnych-praci-2017-62398",
+          "language": "cs",
+          "relevance": "supports incremental curing and minimal light-tip distance; does not independently establish silicone-key step",
+          "sourceType": "professional_article"
+        }
+      ],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "Pro individuální silikonový klíč je potřebná předloha situace, získaná otiskem či skenem.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "false",
+          "explanationCs": "Běžné kompozity se ukládají po vrstvách podle pokynů výrobce kvůli spolehlivému vytvrzení.",
+          "correctedStatementCs": "Kompozit se aplikuje ve vrstvách odpovídajících předepsané hloubce polymerace."
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Větší vzdálenost obvykle zhoršuje účinnou intenzitu ozáření.",
+          "correctedStatementCs": "Světlovod se přikládá co nejblíže povrchu materiálu podle návodu výrobce."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": null,
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "vz_007",
+      "type": "select_incorrect",
+      "topic": "Endodoncie",
+      "question": "Co je chybné tvrzení?",
+      "options": {
+        "a": "EDTA 17% rozpouští v kořenovém kanálku organickou složku",
+        "b": "Chlordent funguje jako lubrikant",
+        "c": "EDTA 17% rozpouští v kořenovém kanálku anorganickou složku"
+      },
+      "sources": [
+        {
+          "test": "Verze 1",
+          "questionNumber": 10
+        },
+        {
+          "test": "Verze 2",
+          "questionNumber": 25
+        }
+      ],
+      "correctAnswer": "a",
+      "explanationCs": "EDTA 17 % odstraňuje anorganickou složku a smear layer; NaOCl rozpouští organickou složku.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "page": 8
+        }
+      ],
+      "externalReferences": [
+        {
+          "title": "Mikrobiálna dekontaminácia koreňových kanálikov devitálnych zubov (slovensky; není českojazyčný)",
+          "url": "https://www.prolekare.cz/casopisy/epidemiologie/2012-4/mikrobialna-dekontaminacia-korenovych-kanalikov-devitalnych-zubov-39479",
+          "language": "sk",
+          "relevance": "supports_a_c"
+        }
+      ],
+      "optionAssessments": {
+        "a": {
+          "verdict": "false",
+          "explanationCs": "EDTA chelatuje minerální, nikoli organickou část smear layer.",
+          "correctedStatementCs": "EDTA 17 % odstraňuje především anorganickou složku smear layer."
+        },
+        "b": {
+          "verdict": "true",
+          "explanationCs": "Roztok NaOCl při instrumentaci pomáhá zvlhčení a kluzu nástrojů; jeho hlavním účelem je výplach a rozklad organické tkáně.",
+          "correctedStatementCs": null
+        },
+        "c": {
+          "verdict": "true",
+          "explanationCs": "EDTA se používá na anorganickou část smear layer.",
+          "correctedStatementCs": null
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": null,
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "vz_008",
+      "type": "select_correct",
+      "topic": "Záchovná stomatologie",
+      "question": "Co je správné tvrzení?",
+      "options": {
+        "a": "Amalgám dozrává více jak 24 hodin",
+        "b": "Amalgám v kavitě drží chemicky a mechanicky",
+        "c": "GIC (skloionomerní cement) je nejvhodnější pro rozsáhlé kazy II.třídy podle Blacka"
+      },
+      "sources": [
+        {
+          "test": "Verze 1",
+          "questionNumber": 11
+        },
+        {
+          "test": "Verze 2",
+          "questionNumber": 4
+        }
+      ],
+      "correctAnswer": "a",
+      "explanationCs": "Správně a): amalgám nabývá konečných vlastností déle než 24 hodin. Konvenční amalgám v kavitě drží mechanickou retencí; rozsáhlé kavity II. třídy nejsou univerzálně vhodnou indikací pro běžný GIC.",
+      "studyReferences": [],
+      "externalReferences": [
+        {
+          "title": "Pracovní postupy při zhotovování výplní (LF MU)",
+          "url": "https://is.muni.cz/el/med/jaro2023/ZLPR0232p/Pracovni_postupy_pri_zhotovovani_vyplni.pdf",
+          "language": "cs",
+          "relevance": "amalgam has macro-mechanical retention, not chemical adhesion"
+        },
+        {
+          "title": "Je ošetření zubu amalgámem bezpečné? (Medical Tribune)",
+          "url": "https://www.tribune.cz/archiv/je-osetreni-zubu-amalgamem-bezpecne/",
+          "language": "cs",
+          "relevance": "full setting approximately 24 hours; statement more than 24 hours insufficiently supported"
+        },
+        {
+          "title": "Výplňové materiály trvalé (Masarykova univerzita)",
+          "url": "https://is.muni.cz/www/379606/vyplnove_materialy_trvale.pdf",
+          "language": "cs",
+          "relevance": "GIC class II indications are limited and situation-dependent"
+        },
+        {
+          "title": "Erozivní působení kyselých nápojů na povrch výplňových materiálů",
+          "url": "https://www.prolekare.cz/casopisy/ceska-stomatologie/2022-1-6/erozivni-pusobeni-kyselych-napoju-na-povrch-vyplnovych-materialu-130088",
+          "language": "cs",
+          "relevance": "supports that conventional GIC is intended for selected smaller/non-load-bearing restorations; does not resolve amalgam setting-time ambiguity",
+          "sourceType": "professional_article"
+        },
+        {
+          "title": "Amalgám – WikiSkripta (český medicínský výukový portál)",
+          "url": "https://www.wikiskripta.eu/w/Amalg%C3%A1m",
+          "language": "cs",
+          "relevance": "Explicitly states amalgam maturation in cavity exceeds 24 hours; supports a",
+          "sourceType": "collaborative_medical_educational"
+        }
+      ],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "Amalgám sice získává značnou mechanickou pevnost do 24 hodin, jeho další dozrávání a změny pokračují déle.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "false",
+          "explanationCs": "Konvenční amalgám nemá přirozenou chemickou vazbu na zub; drží hlavně mechanickou retencí.",
+          "correctedStatementCs": "Konvenční amalgám drží v kavitě převážně mechanickou retencí."
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Rozsáhlé kavity II. třídy nejsou obecně ideální indikací konvenčního GIC.",
+          "correctedStatementCs": "Volba výplně rozsáhlé kavity II. třídy závisí na zatížení, lokalizaci a klinické situaci."
+        }
+      },
+      "keyBasis": "supported_czech_educational_source",
+      "verificationNoteCs": "Čas tuhnutí amalgámu je nutné odlišovat od pokračujícího dozrávání materiálu. WikiSkripta uvádějí dozrávání déle než 24 h.",
+      "needsClarification": true,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "vz_009",
+      "type": "select_correct",
+      "topic": "Ortodoncie",
+      "question": "Co je správné tvrzení?",
+      "options": {
+        "a": "Pac. s parodontitis nemůže podstoupit orto léčbu",
+        "b": "Kefalometrický snímek je boční RTG snímek hlavy",
+        "c": "Overbite je dán incizálním schůdkem"
+      },
+      "sources": [
+        {
+          "test": "Verze 1",
+          "questionNumber": 12
+        },
+        {
+          "test": "Verze 2",
+          "questionNumber": 19
+        }
+      ],
+      "correctAnswer": "b",
+      "explanationCs": "Kefalometrický snímek je boční RTG snímek hlavy; parodontitida není automatickou kontraindikací ortodoncie a overbite je vertikální překrytí.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "page": 30
+        },
+        {
+          "document": "study-base.docx",
+          "page": 35
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "false",
+          "explanationCs": "Stabilizovaná parodontitida sama o sobě není absolutní kontraindikací ortodontické léčby.",
+          "correctedStatementCs": "Pacient s dobře kontrolovanou parodontitidou může za určitých podmínek podstoupit ortodontickou léčbu."
+        },
+        "b": {
+          "verdict": "true",
+          "explanationCs": "Kefalometrický telerentgen je standardně boční snímek hlavy.",
+          "correctedStatementCs": null
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Overbite je vertikální překrytí řezáků; incizální schůdek (overjet) je horizontální.",
+          "correctedStatementCs": "Overbite je vertikální překrytí horních a dolních řezáků."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": null,
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "vz_010",
+      "type": "select_correct",
+      "topic": "Záchovná stomatologie",
+      "question": "Co je správné tvrzení?",
+      "options": {
+        "a": "Sklovina je vlhká, proto se musí použít k vazbě fotokompozita primer",
+        "b": "Po naleptání dentinu se odhalí kolagenní síť a sem poté zatéká bond",
+        "c": "Bond není nutné polymerovat, ztuhne sám"
+      },
+      "sources": [
+        {
+          "test": "Verze 1",
+          "questionNumber": 13
+        },
+        {
+          "test": "Verze 2",
+          "questionNumber": 7
+        }
+      ],
+      "correctAnswer": "b",
+      "explanationCs": "Po leptání dentinu se odhaluje kolagenní síť, do které proniká adhezivum. Pravidla primer/bond se liší dle systému.",
+      "studyReferences": [],
+      "externalReferences": [
+        {
+          "title": "Univerzální adheziva – nový směr vývoje adhezivních systémů",
+          "url": "https://www.prolekare.cz/casopisy/ceska-stomatologie/2020-1-10/univerzalni-adheziva-novy-smer-vyvoje-adhezivnich-systemu-121538",
+          "language": "cs",
+          "relevance": "supports_option_b_with_nuance"
+        },
+        {
+          "title": "Připojení materiálů k tvrdým zubním tkáním (LF MU)",
+          "url": "https://is.muni.cz/el/med/podzim2019/ZLPR0131c/Pripojeni_materialu_k_tvrdym_zubnim_tkanim.pdf",
+          "language": "cs",
+          "relevance": "supports_b_and_rejects_a_c"
+        }
+      ],
+      "optionAssessments": {
+        "a": {
+          "verdict": "false",
+          "explanationCs": "Sklovina se váže zejména po naleptání; primer je klíčový především pro dentin podle typu adhezivního systému.",
+          "correctedStatementCs": "Naleptaná sklovina vytváří mikromechanickou vazbu adheziva bez nutnosti samostatného primeru v každém systému."
+        },
+        "b": {
+          "verdict": "qualified",
+          "explanationCs": "Po total-etch leptání dentinu se obnaží kolagen; do něj pronikají složky primeru a adheziva.",
+          "correctedStatementCs": "Po leptání dentinu se odhalí kolagenní síť a infiltrují ji složky adhezivního systému."
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Světlem tuhnoucí adheziva se musí vytvrdit dle návodu výrobce.",
+          "correctedStatementCs": "Fotopolymerující bond je nutné osvětlit předepsanou dobu."
+        }
+      },
+      "keyBasis": "verified_external",
+      "verificationNoteCs": null,
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "vz_011",
+      "type": "select_correct",
+      "topic": "Ortodoncie",
+      "question": "Co je správné tvrzení?",
+      "options": {
+        "a": "U anteriorotace je výrazná bradová rýha",
+        "b": "U posteriorotace je hluboký skus",
+        "c": "U posteriorotace prominuje brada"
+      },
+      "sources": [
+        {
+          "test": "Verze 1",
+          "questionNumber": 14
+        },
+        {
+          "test": "Verze 2",
+          "questionNumber": 6
+        }
+      ],
+      "correctAnswer": "a",
+      "explanationCs": "Anteriorotace je spojena s výraznou bradovou rýhou; posteriorotace s vyhlazenou rýhou a otevřeným skusem.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "page": 30
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "Anteriorotace mandibuly souvisí s výraznější bradou a hlubší bradovou rýhou.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "false",
+          "explanationCs": "Posteriorotace souvisí spíše s tendencí k otevřenému skusu.",
+          "correctedStatementCs": "U posteriorotace je častější otevřený skus."
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Při posteriorotaci bývá brada spíše retrudovaná.",
+          "correctedStatementCs": "Prominentní brada je typičtější pro anteriorotaci."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": null,
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "vz_012",
+      "type": "select_correct",
+      "topic": "Endodoncie",
+      "question": "Plnění kořenového kanálku, co je správné tvrzení?",
+      "options": {
+        "a": "Nejlepší technika plnění kanálku je metoda centrálního čepu",
+        "b": "Ideální je mít v kanálku co nejvíce sealeru a co nejméně gutaperči",
+        "c": "Při plnění metodou laterální kondenzace hrozí riziko vertikální fraktury radixu"
+      },
+      "sources": [
+        {
+          "test": "Verze 1",
+          "questionNumber": 15
+        },
+        {
+          "test": "Verze 2",
+          "questionNumber": 3
+        }
+      ],
+      "correctAnswer": "c",
+      "explanationCs": "Laterální kondenzace spreaderem může vést k vertikální fraktuře kořene; cílem je více gutaperči a méně sealeru.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "page": 10
+        }
+      ],
+      "externalReferences": [
+        {
+          "title": "Klinické aspekty aplikace Thermafilu",
+          "url": "https://www.prolekare.cz/casopisy/ceska-stomatologie/2001-6/hiinicke-aspekty-aplikace-thermafilu-souhrnny-referat-30472",
+          "language": "cs",
+          "relevance": "supports_option_c"
+        },
+        {
+          "title": "Praktické využití endodontických sealerů na bázi biokeramiky",
+          "url": "https://www.prolekare.cz/casopisy/ceska-stomatologie/2021-2-12/prakticke-vyuziti-endodontickych-sealeru-na-bazi-biokeramiky-127314",
+          "language": "cs",
+          "relevance": "qualifies_option_a"
+        }
+      ],
+      "optionAssessments": {
+        "a": {
+          "verdict": "false",
+          "explanationCs": "Metoda centrálního čepu není obecně nejlepší ve všech kanálcích; záleží na anatomii a sealeru.",
+          "correctedStatementCs": "Volba obturační techniky závisí na anatomii kanálku a použitém materiálu."
+        },
+        "b": {
+          "verdict": "false",
+          "explanationCs": "U klasických technik je cílem dostatečné množství gutaperči s tenkou vrstvou sealeru.",
+          "correctedStatementCs": "U laterální kondenzace má být co nejvíce gutaperči a co nejméně sealeru."
+        },
+        "c": {
+          "verdict": "true",
+          "explanationCs": "Nadměrný kondenzační tlak při laterální kondenzaci může vyvolat vertikální frakturu kořene.",
+          "correctedStatementCs": null
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": null,
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "vz_013",
+      "type": "select_correct",
+      "topic": "Dentální traumatologie",
+      "question": "Co je správné tvrzení?",
+      "options": {
+        "a": "Při intruzivní luxaci vždy zub extrahujeme",
+        "b": "Po avulzi replantujeme pouze stálý zub",
+        "c": "Fragmenty stálého zubu po jeho zlomenině nikdy nepoužijeme k refixaci"
+      },
+      "sources": [
+        {
+          "test": "Verze 1",
+          "questionNumber": 16
+        },
+        {
+          "test": "Verze 2",
+          "questionNumber": 24
+        }
+      ],
+      "correctAnswer": "b",
+      "explanationCs": "Dočasné avulzované zuby nereplantujeme; u stálých je replantace indikována dle stavu a podmínek. Fragmenty zubů lze refixovat.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "page": 52
+        },
+        {
+          "document": "study-base.docx",
+          "page": 53
+        },
+        {
+          "document": "study-base.docx",
+          "page": 54
+        }
+      ],
+      "externalReferences": [
+        {
+          "title": "Úrazy dočasných zubů (Souborný referát)",
+          "url": "https://www.prolekare.cz/en/journals/czech-dental-journal/2008-3/urazy-docasnych-zubu-souborny-referat-1319?hl=cs",
+          "language": "cs",
+          "relevance": "supports_no_primary_replantation"
+        }
+      ],
+      "optionAssessments": {
+        "a": {
+          "verdict": "false",
+          "explanationCs": "Intruze stálého zubu nevyžaduje automaticky extrakci; existují možnosti reerupce nebo extruze.",
+          "correctedStatementCs": "Intruzivní luxace se řeší podle typu zubu, stupně intruze a vývoje kořene."
+        },
+        "b": {
+          "verdict": "true",
+          "explanationCs": "Avulzní dočasný zub se nereplantuje; replantace připadá v úvahu u stálého zubu.",
+          "correctedStatementCs": null
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Odlomený fragment korunky stálého zubu může být vhodný pro adhezivní refixaci.",
+          "correctedStatementCs": "Fragment stálého zubu lze za vhodných podmínek znovu připojit."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": null,
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "vz_014",
+      "type": "select_incorrect",
+      "topic": "Záchovná stomatologie",
+      "question": "Co je chybné tvrzení?",
+      "options": {
+        "a": "Polymeraci ve fotokompozitech umožňuje fotoiniciátor",
+        "b": "Vlnová délka pro kafrchinon je 740 nm",
+        "c": "Každý fotoiniciátor má svoji vlnovou délku"
+      },
+      "sources": [
+        {
+          "test": "Verze 1",
+          "questionNumber": 17
+        },
+        {
+          "test": "Verze 2",
+          "questionNumber": 26
+        }
+      ],
+      "correctAnswer": "b",
+      "explanationCs": "Absorpční maximum kafrchinonu je přibližně 468–470 nm, nikoliv 740 nm.",
+      "studyReferences": [],
+      "externalReferences": [
+        {
+          "title": "Kam směřuje vývoj polymeračních lamp?",
+          "url": "https://www.prolekare.cz/casopisy/ceska-stomatologie/2010-3/kam-smeruje-vyvoj-polymeracnich-lamp-32252",
+          "language": "cs",
+          "relevance": "supports_a_b_c"
+        }
+      ],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "Fotoiniciátor po absorpci světla zahajuje reakci vytvrzování kompozitu.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "false",
+          "explanationCs": "Kafrchinon má absorpční maximum přibližně 468–470 nm.",
+          "correctedStatementCs": "Absorpční maximum kafrchinonu je přibližně 470 nm."
+        },
+        "c": {
+          "verdict": "qualified",
+          "explanationCs": "Různé fotoiniciátory mají charakteristická absorpční pásma, nikoli nutně jedinou přesnou vlnovou délku.",
+          "correctedStatementCs": "Různé fotoiniciátory mají různá absorpční spektra a maxima."
+        }
+      },
+      "keyBasis": "verified_external",
+      "verificationNoteCs": null,
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "vz_015",
+      "type": "select_correct",
+      "topic": "Endodoncie",
+      "question": "Postendodontické ošetření, co je správné tvrzení?",
+      "options": {
+        "a": "Aktivní čepy se závitem při zašroubování do stěn koř. kanálku výrazně zvyšují riziko vertikální fraktury radixu",
+        "b": "Ferule musí být alespoň 5mm",
+        "c": "Čepová nástavba je nejčastěji zhotovena ze zlata"
+      },
+      "sources": [
+        {
+          "test": "Verze 1",
+          "questionNumber": 18
+        },
+        {
+          "test": "Verze 2",
+          "questionNumber": 2
+        }
+      ],
+      "correctAnswer": "a",
+      "explanationCs": "Aktivní závitové čepy zvyšují napětí a riziko vertikální fraktury; ferule má být alespoň 2 mm, ne 5 mm.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "page": 16
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "Aktivní závitové čepy zvyšují napětí na stěny kořene a tím riziko fraktury.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "false",
+          "explanationCs": "Studijní materiál uvádí doporučenou feruli alespoň 2 mm, nikoli 5 mm.",
+          "correctedStatementCs": "Pro ferrule effect se běžně uvádí přibližně 1,5–2 mm souvislé zdravé zubní tkáně."
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Zlato není nejběžnější materiál současných čepových nástaveb.",
+          "correctedStatementCs": "Čepové nástavby se zhotovují z různých materiálů, včetně FRC a kovových slitin."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": null,
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "vz_016",
+      "type": "select_correct",
+      "topic": "Kariologie",
+      "question": "Co je správné tvrzení?",
+      "options": {
+        "a": "Zubní sonda musí mít ostrý hrot",
+        "b": "Při vyšetření na křídovou skvrnu silně tlačíme zubní sondou",
+        "c": "Zubní sonda musí mít jemný zaoblený hrot"
+      },
+      "sources": [
+        {
+          "test": "Verze 1",
+          "questionNumber": 19
+        },
+        {
+          "test": "Verze 2",
+          "questionNumber": 20
+        }
+      ],
+      "correctAnswer": "a",
+      "explanationCs": "Běžná vyšetřovací sonda (pátradlo) je v materiálech LF MU popsána jako ostrý nástroj; používá se však jemně a bez tlaku. WHO parodontální sonda má na konci kuličku.",
+      "studyReferences": [],
+      "externalReferences": [
+        {
+          "title": "Metody včasné diagnostiky incipientních kariézních lézí",
+          "url": "https://www.prolekare.cz/casopisy/ceska-stomatologie/2011-1/metody-vcasne-diagnostiky-incipientnich-karieznich-lezi-34264?hl=cs",
+          "language": "cs",
+          "relevance": "supports careful non-destructive early-caries detection but does not independently establish that all dental probes must have a rounded tip",
+          "sourceType": "professional_article"
+        },
+        {
+          "title": "Instrumentarium a jeho účel (LF MU)",
+          "url": "https://is.muni.cz/el/med/podzim2010/ZLPR0131c/Instrumentarium_a_jeho_ucel.pdf",
+          "language": "cs",
+          "relevance": "Distinguishes sharp caries explorer from ball-ended WHO periodontal probe and recommends no pressure."
+        }
+      ],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "LF MU popisuje běžnou vyšetřovací sondu (pátradlo) jako ostrý nástroj. Používá se bez tlaku a jemně.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "false",
+          "explanationCs": "Silný tlak může poškodit počáteční kariézní lézi; vyšetření musí být šetrné.",
+          "correctedStatementCs": "Při vyšetření křídové skvrny používáme šetrný postup bez silného tlaku."
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Kulovitý konec je typický například pro WHO parodontální sondu, nikoli povinně pro každé zubní pátradlo.",
+          "correctedStatementCs": "Vyšetřovací pátradlo může mít ostrý hrot; WHO parodontální sonda má kuličku na konci."
+        }
+      },
+      "keyBasis": "qualified_external",
+      "verificationNoteCs": "a platí pro běžné vyšetřovací pátradlo. WHO parodontální sonda je jiný nástroj s kuličkovým zakončením; při diagnostice časného kazu nepoužívat tlak.",
+      "needsClarification": true,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "vz_017",
+      "type": "select_correct",
+      "topic": "Kariologie",
+      "question": "Co je správné tvrzení?",
+      "options": {
+        "a": "Do invasivní léčby časného kazu patří lokální fluoridace",
+        "b": "Křídová skvrna se nejčastěji vyskytuje v aproximálním prostoru a cervikální oblasti zubu",
+        "c": "Každou hnědou skvrnu na zubu vždy preparujeme"
+      },
+      "sources": [
+        {
+          "test": "Verze 1",
+          "questionNumber": 21
+        },
+        {
+          "test": "Verze 2",
+          "questionNumber": 28
+        }
+      ],
+      "correctAnswer": "b",
+      "explanationCs": "Správně b) jako jediná zamýšlená odpověď: počínající kaz se jako křídová skvrna vyskytuje i aproximálně a v krčkové oblasti při retenci plaku. Fluoridace je neinvazivní, a hnědou skvrnu nepreparujeme automaticky.",
+      "studyReferences": [],
+      "externalReferences": [
+        {
+          "title": "Zubní kaz: co to je? (NZIP)",
+          "url": "https://www.nzip.cz/clanek/660-zubni-kaz-zakladni-informace",
+          "language": "cs",
+          "relevance": "early enamel lesions may remineralize with hygiene and fluoride, argues against a and c; location b not independently established"
+        },
+        {
+          "title": "Směrnice pro dětskou a adolescentní stomatologickou péči",
+          "url": "https://www.prolekare.cz/casopisy/svet-prakticke-mediciny/2023-4-11/smernice-135589",
+          "language": "cs",
+          "relevance": "supports non-invasive fluoride management of non-cavitated caries; does not substantiate word nejčastěji in option b",
+          "sourceType": "professional_article"
+        },
+        {
+          "title": "Praktická cvičení – indexy kazivosti (LF MU)",
+          "url": "https://is.muni.cz/el/med/jaro2020/MPPS081/um/Indexy_kazivosti.pdf",
+          "language": "cs",
+          "relevance": "Lists chalk spot lesions on smooth/proximal surfaces, but not comparative prevalence."
+        },
+        {
+          "title": "Zubní kaz raného dětství, ECC (LF MU)",
+          "url": "https://is.muni.cz/el/med/jaro2020/ZLDL0821p/problematika_diagnozy_ECC.pdf",
+          "language": "cs",
+          "relevance": "Shows cervical appearance of initial white-spot lesions; does not establish most common location across all patients."
+        },
+        {
+          "title": "Diagnostika kazu na hladkých plochách – diplomová práce Univerzity Karlovy (akademická práce, nikoli doporučení)",
+          "url": "https://dspace.cuni.cz/bitstream/handle/20.500.11956/183518/130362882.pdf?isAllowed=y&sequence=1",
+          "language": "cs",
+          "relevance": "Describes initial white spot on approximal surfaces and gingival third of smooth surfaces; does not prove most common frequency",
+          "sourceType": "university_thesis"
+        }
+      ],
+      "optionAssessments": {
+        "a": {
+          "verdict": "false",
+          "explanationCs": "Lokální fluoridace u nekavitovaného počínajícího kazu patří k neinvazivnímu managementu, nikoli k invazivní preparaci.",
+          "correctedStatementCs": "Lokální fluoridace patří mezi neinvazivní postupy péče o časnou kariézní lézi."
+        },
+        "b": {
+          "verdict": "qualified",
+          "explanationCs": "Aproximální plochy a krčkové oblasti jsou typickými lokalizacemi lézí bílé skvrny kvůli retenci plaku. Tvrzení „nejčastěji“ je bez určení souboru zjednodušením.",
+          "correctedStatementCs": "Křídové skvrny se často objevují na aproximálních plochách a v cervikálních oblastech zubů."
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Samotná hnědá pigmentace bez známek aktivní kavitační léze neznamená automatickou indikaci k preparaci.",
+          "correctedStatementCs": "Hnědou skvrnu posuzujeme podle aktivity a stavu povrchu; ne vždy se preparuje."
+        }
+      },
+      "keyBasis": "qualified_external",
+      "verificationNoteCs": "b je nejvhodnější možnost; častý výskyt na aproximálních a cervikálních plochách je doložen, ale superlativ nejčastěji není přísně epidemiologicky ověřen.",
+      "needsClarification": true,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "vz_018",
+      "type": "select_incorrect",
+      "topic": "Dentální anatomie",
+      "question": "Počet zubů, co je chybné tvrzení?",
+      "options": {
+        "a": "Hypodoncie je snížený počet zubů, chybí méně než 8 zubů",
+        "b": "Ageneze- chybí 1 zub nebo symetricky stejné zuby",
+        "c": "Anodoncie- pacient nemá žádný zub založený"
+      },
+      "sources": [
+        {
+          "test": "Verze 1",
+          "questionNumber": 22
+        },
+        {
+          "test": "Verze 2",
+          "questionNumber": 13
+        }
+      ],
+      "correctAnswer": "a",
+      "explanationCs": "V učebním textu je hypodoncie absence méně než šesti zubů; terminologie v odborné literatuře není zcela jednotná, což je třeba přiznat.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "page": 37
+        }
+      ],
+      "externalReferences": [
+        {
+          "title": "Ageneze zubů a související poruchy vývoje dentice",
+          "url": "https://www.prolekare.cz/casopisy/ceska-stomatologie/2014-1/ageneze-zubu-a-souvisejici-poruchy-vyvoje-dentice-48756",
+          "language": "cs",
+          "relevance": "supports_a_c_with_terminology_nuance"
+        },
+        {
+          "title": "Ageneze zubů",
+          "url": "https://www.prolekare.cz/en/journals/czech-dental-journal/2012-5/ageneze-zubu-38754?hl=cs",
+          "language": "cs",
+          "relevance": "supports_a_c_with_terminology_nuance"
+        }
+      ],
+      "optionAssessments": {
+        "a": {
+          "verdict": "false",
+          "explanationCs": "V běžné číselné klasifikaci chybí při hypodoncii 1–5 zubů (bez třetích molárů), nikoli méně než 8.",
+          "correctedStatementCs": "Hypodoncie v běžném užším smyslu znamená nezaložení 1–5 zubů, oligodoncie 6 a více."
+        },
+        "b": {
+          "verdict": "qualified",
+          "explanationCs": "Ageneze znamená nezaložení zubního zárodku a může postihnout jeden i více zubů; uvedené příklady nejsou úplnou definicí.",
+          "correctedStatementCs": "Ageneze zubu je vrozená nepřítomnost jeho zárodku."
+        },
+        "c": {
+          "verdict": "true",
+          "explanationCs": "Anodoncie je nevyvinutí všech zubních zárodků.",
+          "correctedStatementCs": null
+        }
+      },
+      "keyBasis": "verified_external",
+      "verificationNoteCs": "Pro zkoušku se používá hranice hypodoncie 1–5 a oligodoncie 6+ (bez třetích molárů). V literatuře existují odlišnosti terminologie.",
+      "needsClarification": true,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "vz_019",
+      "type": "select_correct",
+      "topic": "Endodoncie",
+      "question": "Co je správné tvrzení?",
+      "options": {
+        "a": "Pulpotomie je úplné odstranění pulpy",
+        "b": "Pulpektomie je částečné odstranění pulpy",
+        "c": "Pulpotomie je částečné odstranění pulpy"
+      },
+      "sources": [
+        {
+          "test": "Verze 1",
+          "questionNumber": 23
+        },
+        {
+          "test": "Verze 2",
+          "questionNumber": 10
+        }
+      ],
+      "correctAnswer": "c",
+      "explanationCs": "Pulpotomie odstraňuje koronální část pulpy, zatímco pulpektomie odstraní dřeň v celém rozsahu.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "page": 19
+        },
+        {
+          "document": "study-base.docx",
+          "page": 20
+        }
+      ],
+      "externalReferences": [
+        {
+          "title": "Sborník abstraktů konference ÚSMĚV 021",
+          "url": "https://www.prolekare.cz/en/journals/czech-dental-journal/2021-3-17/sbornik-abstraktu-konference-usmev-021-128158",
+          "language": "cs",
+          "relevance": "definition of pulpotomy: removal of coronal pulp",
+          "sourceType": "professional_article"
+        },
+        {
+          "title": "Sborník abstraktů konference ÚSMĚV 023",
+          "url": "https://www.prolekare.cz/casopisy/ceska-stomatologie/2023-2-13/sbornik-abstraktu-konference-usmev-023-134517",
+          "language": "cs",
+          "relevance": "definition of pulpectomy: removal of whole coronal and radicular pulp",
+          "sourceType": "professional_article"
+        }
+      ],
+      "optionAssessments": {
+        "a": {
+          "verdict": "false",
+          "explanationCs": "Pulpotomie odstraňuje jen část pulpy, zpravidla korunkovou.",
+          "correctedStatementCs": "Pulpotomie je odstranění korunkové části pulpy."
+        },
+        "b": {
+          "verdict": "false",
+          "explanationCs": "Pulpektomie znamená odstranění celé pulpy.",
+          "correctedStatementCs": "Pulpektomie je úplné odstranění pulpy."
+        },
+        "c": {
+          "verdict": "true",
+          "explanationCs": "Pulpotomie je částečné odstranění pulpy, zejména korunkové.",
+          "correctedStatementCs": null
+        }
+      },
+      "keyBasis": "verified_external",
+      "verificationNoteCs": null,
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "vz_020",
+      "type": "select_incorrect",
+      "topic": "Záchovná stomatologie",
+      "question": "Co je chybné tvrzení?",
+      "options": {
+        "a": "Manipulace s AMG je pouze bezdotyková",
+        "b": "Skloionomer se aplikuje do vlhké kavity",
+        "c": "AMG drží v kavitě mechanicky a chemicky"
+      },
+      "sources": [
+        {
+          "test": "Verze 1",
+          "questionNumber": 24
+        },
+        {
+          "test": "Verze 2",
+          "questionNumber": 30
+        }
+      ],
+      "correctAnswer": "c",
+      "explanationCs": "Běžný amalgám nemá chemickou adhezi k tvrdým zubním tkáním a drží mechanicky. ČSK doporučuje bezdotykovou manipulaci s amalgámem a LF MU uvádí, že po kondicionování zůstává kavita pro GIC vlhká.",
+      "studyReferences": [],
+      "externalReferences": [
+        {
+          "title": "Připojení materiálů k tvrdým zubním tkáním (LF MU)",
+          "url": "https://is.muni.cz/el/med/podzim2019/ZLPR0131c/Pripojeni_materialu_k_tvrdym_zubnim_tkanim.pdf",
+          "language": "cs",
+          "relevance": "c false: macro-mechanical amalgam retention"
+        },
+        {
+          "title": "NOVA GLASS-F návod k použití",
+          "url": "https://www.janouch-dental.cz/data/attachments/nova-glass-f-navod_2.pdf",
+          "language": "cs",
+          "relevance": "conditioned dentin should not be overdried; moisture not equivalent to wet contaminated cavity"
+        },
+        {
+          "title": "Odborné stanovisko ČSK 2/2018 k používání amalgámových výplní",
+          "url": "https://www.lks-casopis.cz/clanek/odborne-stanovisko-predstavenstva-komory-c-osp-2-2018-k-pouzivani-amalgamovych-vyplni-a-jejich-toxicite/",
+          "language": "cs",
+          "relevance": "States bezdotyková manipulace for amalgam."
+        },
+        {
+          "title": "Pracovní postupy při zhotovování výplní (LF MU)",
+          "url": "https://is.muni.cz/el/med/jaro2023/ZLPR0232p/Pracovni_postupy_pri_zhotovovani_vyplni.pdf",
+          "language": "cs",
+          "relevance": "Describes moist conditioned cavity for GIC and macro-mechanical retention for conventional amalgam."
+        }
+      ],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "Odborné stanovisko České stomatologické komory požaduje při práci s amalgámem bezdotykovou manipulaci.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "true",
+          "explanationCs": "Po kondicionování se kavita pro konvenční skloionomerní cement nepřesušuje, ale nesmí být kontaminována slinou či přebytkem vody.",
+          "correctedStatementCs": null
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Konvenční amalgám se k tvrdým zubním tkáním chemicky neváže; retenční mechanismus je makromechanický.",
+          "correctedStatementCs": "Konvenční amalgám drží v kavitě mechanicky."
+        }
+      },
+      "keyBasis": "verified_external",
+      "verificationNoteCs": null,
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "vz_021",
+      "type": "select_incorrect",
+      "topic": "Ortodoncie",
+      "question": "Co je chybné tvrzení?",
+      "options": {
+        "a": "Hloubka skusu je daná vertikálním překrýváním horních a dolních řezáků",
+        "b": "Overbite je optimální 3-4 mm",
+        "c": "Overjet je dán vertikálním překrýváním horních a dolních řezáků"
+      },
+      "sources": [
+        {
+          "test": "Verze 1",
+          "questionNumber": 25
+        },
+        {
+          "test": "Verze 2",
+          "questionNumber": 22
+        }
+      ],
+      "correctAnswer": "c",
+      "explanationCs": "Overjet je horizontální incizální schůdek; overbite označuje vertikální překrytí řezáků.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "page": 29
+        },
+        {
+          "document": "study-base.docx",
+          "page": 30
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "Hloubka skusu (overbite) odpovídá vertikálnímu překrytí řezáků.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "qualified",
+          "explanationCs": "Studijní materiál uvádí 3–4 mm jako orientační optimum, záleží na definici a pacientovi.",
+          "correctedStatementCs": "Fyziologické vertikální překrytí řezáků se hodnotí v milimetrech nebo procentech."
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Overjet označuje horizontální, nikoli vertikální vzdálenost řezáků.",
+          "correctedStatementCs": "Overjet je horizontální incizální schůdek."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": null,
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "vz_022",
+      "type": "select_incorrect",
+      "topic": "Endodoncie",
+      "question": "Co je chybné tvrzení?",
+      "options": {
+        "a": "Dentily vznikají kalcifikací pulpální tkáně",
+        "b": "Terapie u kombinované pulpo-parodontální léze zahrnuje endodontické ošetření a komplexní paro léčbu",
+        "c": "Reverzibilní pulpitis se projevuje spontánní bolestí"
+      },
+      "sources": [
+        {
+          "test": "Verze 1",
+          "questionNumber": 26
+        },
+        {
+          "test": "Verze 2",
+          "questionNumber": 15
+        }
+      ],
+      "correctAnswer": "c",
+      "explanationCs": "Spontánní bolest je typickým příznakem ireverzibilní, nikoliv reverzibilní pulpitidy.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "page": 1
+        },
+        {
+          "document": "study-base.docx",
+          "page": 4
+        },
+        {
+          "document": "study-base.docx",
+          "page": 45
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "Dentikly jsou kalcifikace v pulpální tkáni.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "true",
+          "explanationCs": "Kombinovaná endo-parodontální léze může vyžadovat léčbu obou složek.",
+          "correctedStatementCs": null
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Spontánní přetrvávající bolest je typičtější pro ireverzibilní pulpitidu.",
+          "correctedStatementCs": "Reverzibilní pulpitis se obvykle projevuje krátkou vyvolanou bolestí bez spontánní bolesti."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": null,
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "vz_023",
+      "type": "select_incorrect",
+      "topic": "Ortodoncie",
+      "question": "Co je chybné tvrzení?",
+      "options": {
+        "a": "Mikrogenii řadíme mezi skeletální anomálie",
+        "b": "Převislý skus se vyznačuje strmým až retruzním postavením horních středních řezáků",
+        "c": "Otevřený skus může být pouze ve frontálním úseku"
+      },
+      "sources": [
+        {
+          "test": "Verze 2",
+          "questionNumber": 1
+        }
+      ],
+      "correctAnswer": "c",
+      "explanationCs": "Otevřený skus může být frontální i laterální; mikrogenie patří ke skeletálním anomáliím a převislý skus je charakterizován strmými horními řezáky.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "page": 32
+        },
+        {
+          "document": "study-base.docx",
+          "page": 34
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "Mikrogenie je vývojová anomálie skeletu mandibuly.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "true",
+          "explanationCs": "Převislý skus je výrazná forma hlubokého skusu a může souviset s retruzí horních řezáků.",
+          "correctedStatementCs": null
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Otevřený skus může být frontální i laterální.",
+          "correctedStatementCs": "Otevřený skus se může vyskytovat ve frontálním i postranním úseku chrupu."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": null,
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "vz_024",
+      "type": "select_correct",
+      "topic": "Dentální traumatologie",
+      "question": "Poranění zubů, co je správné tvrzení?",
+      "options": {
+        "a": "Při avulzi dočasného zubu nikdy dočasný zub nereplantujeme",
+        "b": "Při avulzi dočasného zubu vždy dočasný zub replantujeme",
+        "c": "Při avulzi stálého zubu nikdy stálý zub nereplantujeme"
+      },
+      "sources": [
+        {
+          "test": "Verze 2",
+          "questionNumber": 14
+        }
+      ],
+      "correctAnswer": "a",
+      "explanationCs": "Avulzované dočasné zuby se nereplantují pro riziko poškození zárodku stálého zubu.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "page": 52
+        }
+      ],
+      "externalReferences": [
+        {
+          "title": "Úrazy dočasných zubů (Souborný referát)",
+          "url": "https://www.prolekare.cz/en/journals/czech-dental-journal/2008-3/urazy-docasnych-zubu-souborny-referat-1319?hl=cs",
+          "language": "cs",
+          "relevance": "supports_no_primary_replantation"
+        }
+      ],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "Avulzovaný dočasný zub se nereplantuje kvůli riziku poškození zárodku stálého zubu.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "false",
+          "explanationCs": "Replantace dočasného zubu se nedoporučuje.",
+          "correctedStatementCs": "Po avulzi dočasného zubu se dočasný zub nereplantuje."
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "U stálého zubu lze replantaci za vhodných podmínek indikovat.",
+          "correctedStatementCs": "Avulzovaný stálý zub může být replantován; postup závisí na situaci."
+        }
+      },
+      "keyBasis": "verified_external",
+      "verificationNoteCs": null,
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "vz_025",
+      "type": "select_incorrect",
+      "topic": "Dentální hypersenzitivita",
+      "question": "Dentinová hypersenzitivita, co je chybné tvrzení?",
+      "options": {
+        "a": "Dentinovou hypersenzitivitu snižují draselné soli, fluoridy a vápenato-fosfátové preparáty",
+        "b": "K chemické obturaci dentinových tubulů používáme laky a adhesiva",
+        "c": "Braennstromova hydrodynamická teorie vysvětluje vznik bolesti zubu"
+      },
+      "sources": [
+        {
+          "test": "Verze 2",
+          "questionNumber": 18
+        }
+      ],
+      "correctAnswer": "b",
+      "explanationCs": "V testu je jako chybné tvrzení zvoleno b): laky a dentinová adheziva tubuly uzavírají převážně fyzikální bariérou (adhezivní vrstvou), zatímco chemickou obturací v užším smyslu rozumíme například srážení minerálních depozit. Klinicky mohou adheziva tubuly skutečně uzavírat.",
+      "studyReferences": [],
+      "externalReferences": [
+        {
+          "title": "Bolest zubů a jejich senzitivita",
+          "url": "https://www.prolekare.cz/casopisy/ceska-stomatologie/2007-3/bolest-zubu-a-jejich-senzitivita-3785",
+          "language": "cs",
+          "relevance": "supports_b_c"
+        },
+        {
+          "title": "Technologie Pro-Argin v řešení hypersenzitivity dentinu",
+          "url": "https://www.prolekare.cz/tema/zubni-kaz/detail/technologie-pro-argin-v-reseni-hypersenzitivity-dentinu-8155",
+          "language": "cs",
+          "relevance": "supports_a_c"
+        },
+        {
+          "title": "Bolest zubů a jejich senzitivita – plný článek (Česká stomatologie)",
+          "url": "https://cspzl.dent.cz/pdfs/sto/2007/03/05.pdf",
+          "language": "cs",
+          "relevance": "Supports hydrodynamic theory and relevant hypersensitivity treatment mechanisms",
+          "sourceType": "peer_reviewed_journal"
+        },
+        {
+          "title": "Adhezivní systémy v morfologickém obrazu I. Tetric Ceram HB",
+          "url": "https://www.prolekare.cz/casopisy/ceska-stomatologie/2005-3/adhezivni-systemy-v-morfologickem-obrazu-i-tetric-ceram-hb-5592",
+          "language": "cs",
+          "relevance": "Dentinové adhezivum může fyzikálně uzavřít tubuly; důležité upřesnění terminologie pro odpověď b",
+          "sourceType": "professional_journal"
+        }
+      ],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "Draselné soli a prostředky k uzávěru tubulů, včetně fluoridů a kalciumfosfátových preparátů, se používají ke snížení hypersenzitivity.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "false_in_exam_terminology",
+          "explanationCs": "Výraz chemická obturace je v zadání nepřesný. Laky a adheziva mohou tubuly překrýt a utěsnit fyzikální bariérou, nejde typicky o chemickou precipitaci minerálů.",
+          "correctedStatementCs": "K fyzikálnímu uzávěru dentinových tubulů lze použít laky a dentinová adheziva."
+        },
+        "c": {
+          "verdict": "true",
+          "explanationCs": "Brännströmova teorie vysvětluje bolest pohybem tekutiny uvnitř dentinových tubulů.",
+          "correctedStatementCs": null
+        }
+      },
+      "keyBasis": "user_confirmed_exam_key_with_professional_terminology_caveat",
+      "verificationNoteCs": "Zadavatel potvrdil jako očekávanou jedinou chybnou odpověď b. Rozpor je terminologický: adheziva/laky mohou dentinové tubuly obturovat, avšak převážně fyzikálním uzávěrem, nikoli chemickou precipitací. Nezaměňovat za tvrzení, že adheziva tubuly neuzavírají.",
+      "needsClarification": true,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_001",
+      "type": "select_correct",
+      "topic": "Anestezie",
+      "question": "Povrchová anestézie, co je správné tvrzení?",
+      "options": {
+        "a": "Anestetikum se aplikuje na sliznici a působí na povrchová nervová zakončení.",
+        "b": "Při povrchové anestézii se anestetikum vždy aplikuje přímo do pulpy.",
+        "c": "Povrchová anestézie je totožná s celkovou anestézií."
+      },
+      "sources": [],
+      "origin": "generated_from_study",
+      "correctAnswer": "a",
+      "explanationCs": "Povrchové anestetikum se nanáší na sliznici; může například zmírnit nepříjemný pocit před vpichem jehly.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Anestézie – Povrchová (terminální) anestézie"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "Povrchová anestézie působí po aplikaci na sliznici na nervová zakončení.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "false",
+          "explanationCs": "Přímá aplikace do zubní dřeně patří k intrapulpální anestézii, nikoli k povrchové.",
+          "correctedStatementCs": "Povrchové anestetikum se aplikuje na sliznici."
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Celková anestézie navozuje celkovou ztrátu vědomí a liší se od lokálního znecitlivění.",
+          "correctedStatementCs": "Povrchová anestézie je forma lokální anestézie."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": "Nová otázka vytvořená podle uvedené části studijních materiálů; nejde o původní testovou otázku.",
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_002",
+      "type": "select_incorrect",
+      "topic": "Endodoncie",
+      "question": "Kofferdam při endodontickém ošetření, co je chybné tvrzení?",
+      "options": {
+        "a": "Pomáhá chránit pacienta před aspirací endodontického nástroje.",
+        "b": "Pomáhá vytvořit suché a přehledné pracovní pole.",
+        "c": "Jeho účelem je zvýšit přístup slin do kořenového kanálku."
+      },
+      "sources": [],
+      "origin": "generated_from_study",
+      "correctAnswer": "c",
+      "explanationCs": "Kofferdam izoluje zub od slin, zlepšuje přehlednost a chrání před polknutím nebo aspirací nástroje.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Endodontické ošetření – Kofferdam"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "Jednou z funkcí kofferdamu je ochrana před polknutím či aspirací nástrojů.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "true",
+          "explanationCs": "Kofferdam odděluje operační pole od slin a měkkých tkání.",
+          "correctedStatementCs": null
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Přístup slin je naopak nežádoucí, protože může kontaminovat ošetřovaný kanálek.",
+          "correctedStatementCs": "Kofferdam izoluje ošetřovaný zub od slin."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": "Nová otázka vytvořená podle uvedené části studijních materiálů; nejde o původní testovou otázku.",
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_003",
+      "type": "select_correct",
+      "topic": "Preventivní stomatologie",
+      "question": "Pečetění fisur, co je správné tvrzení?",
+      "options": {
+        "a": "Pečetění se provádí výhradně na aproximálních plochách řezáků.",
+        "b": "Pečetidlo vytváří bariéru bránící přístupu mikroorganismů a složek potravy do fisur.",
+        "c": "Pečetění nahrazuje pravidelné čištění zubů."
+      },
+      "sources": [],
+      "origin": "generated_from_study",
+      "correctAnswer": "b",
+      "explanationCs": "Pečetění fisur je preventivní metoda: materiál uzavírá riziková místa, ale nenahrazuje domácí hygienu.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Pečetění fissur"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "false",
+          "explanationCs": "Materiál uvádí především fisury a jamky okluzních ploch molárů a premolárů.",
+          "correctedStatementCs": "Pečetění se používá v rizikových fisurách a jamkách zubů."
+        },
+        "b": {
+          "verdict": "true",
+          "explanationCs": "Pečetidlo omezuje přístup mikroorganismů a potravy do hlubokých fisur.",
+          "correctedStatementCs": null
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Pečetění je doplňkem prevence, nikoli náhradou čištění a kontrol.",
+          "correctedStatementCs": "Po pečetění zůstává nutná pravidelná dentální hygiena."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": "Nová otázka vytvořená podle uvedené části studijních materiálů; nejde o původní testovou otázku.",
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_004",
+      "type": "select_incorrect",
+      "topic": "Preventivní stomatologie",
+      "question": "Skloionomerní pečetidla, co je chybné tvrzení?",
+      "options": {
+        "a": "Mohou uvolňovat fluoridy.",
+        "b": "Podle studijních materiálů mívají oproti pryskyřičným pečetidlům horší retenci.",
+        "c": "Vždy se vyznačují delší životností než fotokompozitní pečetidla."
+      },
+      "sources": [],
+      "origin": "generated_from_study",
+      "correctAnswer": "c",
+      "explanationCs": "Skloionomerní pečetidla uvolňují fluoridy, ale v učebním textu jsou popsána jako materiály s horší retencí a kratší životností.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Pečetění fissur – Výhody a nevýhody GIC"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "Uvolňování fluoridů je jednou z výhod skloionomerních materiálů.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "true",
+          "explanationCs": "Učební text uvádí horší retenci GIC pečetidel než u pryskyřičných.",
+          "correctedStatementCs": null
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "V učebním textu je uvedena kratší, nikoli vždy delší, životnost GIC pečetidel.",
+          "correctedStatementCs": "Skloionomerní pečetidla mohou mít kratší životnost než pryskyřičná pečetidla."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": "Nová otázka vytvořená podle uvedené části studijních materiálů; nejde o původní testovou otázku.",
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_005",
+      "type": "select_correct",
+      "topic": "Dentální anatomie",
+      "question": "Taurodoncie, co je správné tvrzení?",
+      "options": {
+        "a": "Projevuje se prodlouženou dřeňovou dutinou a apikálně posunutou furkací kořenů.",
+        "b": "Znamená vrozenou nepřítomnost všech zubních zárodků.",
+        "c": "Je totožná s konkrescencí, tedy srůstem dvou zubů cementem."
+      },
+      "sources": [],
+      "origin": "generated_from_study",
+      "correctAnswer": "a",
+      "explanationCs": "Taurodoncie je morfologická anomálie s prodlouženou pulpální komorou a furkací posunutou apikálně.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Dentální anomálie – Taurodoncie"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "Popis odpovídá taurodoncii uvedené v učebním materiálu.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "false",
+          "explanationCs": "Úplná absence zubů odpovídá anodoncii, nikoli taurodoncii.",
+          "correctedStatementCs": "Taurodoncie je anomálie tvaru zubu, nikoli počtu zubů."
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Konkrescence označuje spojení sousedních zubů cementem, nikoli taurodoncii.",
+          "correctedStatementCs": "Taurodoncie má prodlouženou pulpální komoru a apikálně posunutou furkaci."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": "Nová otázka vytvořená podle uvedené části studijních materiálů; nejde o původní testovou otázku.",
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_006",
+      "type": "select_incorrect",
+      "topic": "Dentální traumatologie",
+      "question": "Subluxace zubu po úrazu, co je chybné tvrzení?",
+      "options": {
+        "a": "Může být spojena s krvácením z gingiválního sulku.",
+        "b": "Zub může být pohyblivý, aniž by byl dislokován.",
+        "c": "Je definována úplným vypadnutím zubu z lůžka."
+      },
+      "sources": [],
+      "origin": "generated_from_study",
+      "correctAnswer": "c",
+      "explanationCs": "Při subluxaci bývá zvýšená pohyblivost bez dislokace; úplné vypadnutí zubu se označuje jako avulze.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Úrazy dočasných zubů – Poškození závěsného aparátu"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "Studijní text spojuje subluxaci s poraněním parodontálních vláken a krvácením ze sulku.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "true",
+          "explanationCs": "Pro subluxaci je charakteristická pohyblivost bez změny polohy zubu.",
+          "correctedStatementCs": null
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Úplné vypadnutí zubu z lůžka označuje termín avulze.",
+          "correctedStatementCs": "Subluxace je zvýšená pohyblivost zubu bez dislokace."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": "Nová otázka vytvořená podle uvedené části studijních materiálů; nejde o původní testovou otázku.",
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_007",
+      "type": "select_correct",
+      "topic": "Ortodoncie",
+      "question": "Anglova klasifikace, co je správné tvrzení?",
+      "options": {
+        "a": "II. Anglova třída označuje meziookluzi.",
+        "b": "III. Anglova třída označuje normookluzi.",
+        "c": "II. Anglova třída označuje distookluzi."
+      },
+      "sources": [],
+      "origin": "generated_from_study",
+      "correctAnswer": "c",
+      "explanationCs": "V Anglově klasifikaci odpovídá I. třída normookluzi, II. distookluzi a III. meziookluzi.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Mezičelistní vztahy – Anglovy třídy"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "false",
+          "explanationCs": "Meziookluze patří do III. Anglovy třídy.",
+          "correctedStatementCs": "II. Anglova třída odpovídá distookluzi."
+        },
+        "b": {
+          "verdict": "false",
+          "explanationCs": "Normookluze odpovídá I. Anglově třídě.",
+          "correctedStatementCs": "III. Anglova třída odpovídá meziookluzi."
+        },
+        "c": {
+          "verdict": "true",
+          "explanationCs": "II. Anglova třída se označuje jako distookluze.",
+          "correctedStatementCs": null
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": "Nová otázka vytvořená podle uvedené části studijních materiálů; nejde o původní testovou otázku.",
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_008",
+      "type": "select_incorrect",
+      "topic": "Funkční okluze",
+      "question": "Pohyby dolní čelisti, co je chybné tvrzení?",
+      "options": {
+        "a": "Deprese mandibuly znamená otevírání úst.",
+        "b": "Protrakce mandibuly znamená pohyb dolní čelisti dozadu.",
+        "c": "Lateropulze mandibuly znamená pohyb do stran."
+      },
+      "sources": [],
+      "origin": "generated_from_study",
+      "correctAnswer": "b",
+      "explanationCs": "Protrakce je pohyb mandibuly dopředu; pohyb dozadu se označuje jako retrakce.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Funkční pohyby dolní čelisti"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "Deprese mandibuly je pohyb dolní čelisti při otevírání úst.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "false",
+          "explanationCs": "Protrakce je pohyb dopředu, nikoli dozadu.",
+          "correctedStatementCs": "Protrakce mandibuly znamená pohyb dopředu; retrakce znamená pohyb dozadu."
+        },
+        "c": {
+          "verdict": "true",
+          "explanationCs": "Lateropulze znamená pohyb dolní čelisti do stran.",
+          "correctedStatementCs": null
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": "Nová otázka vytvořená podle uvedené části studijních materiálů; nejde o původní testovou otázku.",
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_009",
+      "type": "select_correct",
+      "topic": "Endodoncie",
+      "question": "MTA (Mineral Trioxide Aggregate), co je správné tvrzení?",
+      "options": {
+        "a": "MTA je materiál, který tuhne v přítomnosti vody.",
+        "b": "MTA je materiál, který se nesmí dostat do kontaktu s vlhkostí.",
+        "c": "MTA nelze použít pro opravu perforace kořene."
+      },
+      "sources": [],
+      "origin": "generated_from_study",
+      "correctAnswer": "a",
+      "explanationCs": "MTA obsahuje hydrofilní částice a tuhne za přítomnosti vody; mezi indikace patří i oprava perforací.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "MTA – Vlastnosti a indikace"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "Učební text popisuje MTA jako prášek hydrofilních částic tuhnoucí za přítomnosti vody.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "false",
+          "explanationCs": "MTA naopak tuhne za přítomnosti vlhkosti.",
+          "correctedStatementCs": "MTA je hydraulicky tuhnoucí materiál, který reaguje s vodou."
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Oprava perforace kořene je v učebním materiálu uvedenou indikací MTA.",
+          "correctedStatementCs": "MTA lze použít při opravě perforace kořene."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": "Nová otázka vytvořená podle uvedené části studijních materiálů; nejde o původní testovou otázku.",
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_010",
+      "type": "select_incorrect",
+      "topic": "Pedostomatologie",
+      "question": "Pulpektomie dočasného zubu, co je chybné tvrzení?",
+      "options": {
+        "a": "Použitý kořenový výplňový materiál má být resorbovatelný.",
+        "b": "Při ošetření je třeba zohlednit zárodek stálého nástupnického zubu.",
+        "c": "Kořenová výplň dočasného zubu musí být vždy neresorbovatelná."
+      },
+      "sources": [],
+      "origin": "generated_from_study",
+      "correctAnswer": "c",
+      "explanationCs": "Kořenová výplň dočasného zubu má být resorbovatelná kvůli fyziologické resorpci kořene.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Pulpektomie dočasných zubů – Materiály pro plnění kořenů"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "Studijní materiál výslovně požaduje resorbovatelnou kořenovou výplň dočasných zubů.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "true",
+          "explanationCs": "V učebním textu je opakovaně zdůrazněna ochrana zárodku stálého nástupce.",
+          "correctedStatementCs": null
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Neresorbovatelný materiál by neodpovídal fyziologické resorpci dočasného kořene.",
+          "correctedStatementCs": "Kořenová výplň dočasného zubu musí být resorbovatelná."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": "Nová otázka vytvořená podle uvedené části studijních materiálů; nejde o původní testovou otázku.",
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_011",
+      "type": "select_correct",
+      "topic": "Dentální hygiena",
+      "question": "Hygiena chrupu u malých dětí, co je správné tvrzení?",
+      "options": {
+        "a": "S čištěním zubním kartáčkem se čeká do prořezání prvních stálých molárů.",
+        "b": "Zuby se mají začít čistit kartáčkem a fluoridovou pastou od prořezání prvního zubu.",
+        "c": "Dokud má dítě pouze dočasné zuby, pravidelné čištění není potřebné."
+      },
+      "sources": [],
+      "origin": "generated_from_study",
+      "correctAnswer": "b",
+      "explanationCs": "Studijní materiál doporučuje čištění kartáčkem a fluoridovou pastou dvakrát denně již od prvního prořezaného zubu.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Zásady čištění zubů – Prevence ECC"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "false",
+          "explanationCs": "Čekat na stálé moláry je pozdě; čištění začíná od prvního zubu.",
+          "correctedStatementCs": "Zuby se čistí již od prořezání prvního dočasného zubu."
+        },
+        "b": {
+          "verdict": "true",
+          "explanationCs": "Toto doporučení je výslovně uvedeno v části o prevenci ECC.",
+          "correctedStatementCs": null
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Také dočasné zuby vyžadují pravidelnou péči a čištění.",
+          "correctedStatementCs": "Dočasné zuby je třeba čistit pravidelně, od prvního zubu."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": "Nová otázka vytvořená podle uvedené části studijních materiálů; nejde o původní testovou otázku.",
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_012",
+      "type": "select_incorrect",
+      "topic": "Dětská stomatologie",
+      "question": "Prevence časného dětského kazu (ECC), co je chybné tvrzení?",
+      "options": {
+        "a": "Pravidelná hygiena od prvního zubu je součástí prevence ECC.",
+        "b": "Po večerním vyčištění zubů je vhodné ponechat dítěti neomezený přístup ke slazeným nápojům.",
+        "c": "Při prevenci ECC je důležité omezovat časté působení cukrů mezi jídly."
+      },
+      "sources": [],
+      "origin": "generated_from_study",
+      "correctAnswer": "b",
+      "explanationCs": "Při prevenci ECC se po večerním čištění doporučuje nepřijímat sladké nápoje a omezovat frekvenci kontaktu zubů s cukry.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Základní pravidla v prevenci vzniku ECC"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "Učební text doporučuje čištění od prvního zubu dvakrát denně.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "false",
+          "explanationCs": "Slazené nápoje po večerním čištění zvyšují kariézní riziko.",
+          "correctedStatementCs": "Po večerním čištění zubů se dítěti podává neslazená voda; sladké nápoje se vynechávají."
+        },
+        "c": {
+          "verdict": "true",
+          "explanationCs": "Omezování frekvence příjmu cukrů je běžným principem prevence zubního kazu.",
+          "correctedStatementCs": null
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": "Nová otázka vytvořená podle uvedené části studijních materiálů; nejde o původní testovou otázku.",
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_013",
+      "origin": "generated_from_study",
+      "type": "select_correct",
+      "topic": "Endodoncie",
+      "question": "Stanovení pracovní délky kořenového kanálku, co je správné tvrzení?",
+      "options": {
+        "a": "Pracovní délka je vzdálenost od pevného koronálního referenčního bodu k apikálnímu zúžení.",
+        "b": "Pracovní délka se stanovuje výhradně podle viditelné délky korunky zubu.",
+        "c": "Pracovní délka se měří od gingiválního okraje ke dnu dřeňové dutiny."
+      },
+      "sources": [
+        {
+          "type": "study_material",
+          "document": "study-base.docx",
+          "section": "Endodontické ošetření – Stanovení pracovní délky"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanationCs": "Pracovní délka se určuje mezi pevným koronálním referenčním bodem a apikálním zúžením.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Endodontické ošetření – Stanovení pracovní délky"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "Takto je pracovní délka definována ve studijním textu.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "false",
+          "explanationCs": "Samotná délka korunky neudává polohu apikálního referenčního bodu.",
+          "correctedStatementCs": "Pracovní délka se určuje od koronálního referenčního bodu k apikálnímu zúžení."
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Gingivální okraj a dno dřeňové dutiny netvoří definované referenční body pracovní délky.",
+          "correctedStatementCs": "Pracovní délka se měří od pevného koronálního referenčního bodu k apikálnímu zúžení."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": null,
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_014",
+      "origin": "generated_from_study",
+      "type": "select_incorrect",
+      "topic": "Endodoncie",
+      "question": "Vertikální fraktura kořene (VRF), co je chybné tvrzení?",
+      "options": {
+        "a": "Diagnostika VRF může být obtížná, pokud nejsou kořenové segmenty odděleny.",
+        "b": "Na RTG se u VRF může objevit léze ve tvaru písmene J.",
+        "c": "Při VRF je linie lomu na každém běžném RTG snímku vždy jednoznačně viditelná."
+      },
+      "sources": [
+        {
+          "type": "study_material",
+          "document": "study-base.docx",
+          "section": "Endodoncie – VRF (vertical root fracture)"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanationCs": "Vertikální frakturu kořene může naznačovat izolovaný parodontální defekt či RTG nález ve tvaru J, ale průkaz linie lomu bývá obtížný.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Endodoncie – VRF (vertical root fracture)"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "U neoddělených kořenových segmentů může být linie lomu těžko zjistitelná.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "true",
+          "explanationCs": "Studijní materiál uvádí lézi ve tvaru písmene J jako možný RTG nález.",
+          "correctedStatementCs": null
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Studijní text upozorňuje na obtížnou diagnostiku VRF a špatnou viditelnost lomné linie.",
+          "correctedStatementCs": "Linie vertikální fraktury kořene nemusí být na běžném RTG snímku patrná."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": null,
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_015",
+      "origin": "generated_from_study",
+      "type": "select_correct",
+      "topic": "Endodoncie",
+      "question": "Kombinovaná pulpo-parodontální léze, co je správné tvrzení?",
+      "options": {
+        "a": "Je vždy omezena pouze na zubní sklovinu.",
+        "b": "Může zahrnovat výraznou ztrátu kosti, postižení furkace a změny v pulpě.",
+        "c": "Podle studijního textu má vždy výbornou prognózu bez ohledu na rozsah postižení."
+      },
+      "sources": [
+        {
+          "type": "study_material",
+          "document": "study-base.docx",
+          "section": "Endodoncie – Kombinovaná pulpo-parodontální léze"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanationCs": "Kombinovaná pulpo-parodontální léze může postihovat jak závěsný aparát, tak pulpu; podle učebního textu je prognóza nepříznivá.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Endodoncie – Kombinovaná pulpo-parodontální léze"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "false",
+          "explanationCs": "Jde o postižení pulpy a parodontu, nikoli pouze skloviny.",
+          "correctedStatementCs": "Kombinovaná pulpo-parodontální léze postihuje pulpu a závěsný aparát zubu."
+        },
+        "b": {
+          "verdict": "true",
+          "explanationCs": "Učební text uvádí resorpci kosti, postižení furkace a degenerativní změny v pulpě.",
+          "correctedStatementCs": null
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Ve studijním textu je prognóza kombinované léze označena jako nepříznivá.",
+          "correctedStatementCs": "Kombinovaná pulpo-parodontální léze může mít nepříznivou prognózu."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": null,
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_016",
+      "origin": "generated_from_study",
+      "type": "select_correct",
+      "topic": "Dentální traumatologie",
+      "question": "Změna barvy korunky po úrazu dočasného zubu, co je správné tvrzení?",
+      "options": {
+        "a": "Žluté zbarvení může souviset s obliterací dřeňové dutiny.",
+        "b": "Růžovočervené zbarvení vždy znamená úplné vypadnutí zubu z lůžka.",
+        "c": "Barva korunky po úrazu nikdy nesouvisí se stavem zubní dřeně."
+      },
+      "sources": [
+        {
+          "type": "study_material",
+          "document": "study-base.docx",
+          "section": "Úrazy dočasných zubů – Následky úrazu"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanationCs": "Studijní materiál spojuje žluté zbarvení s obliterací dřeňové dutiny a růžovočervené s intrapulpálním krvácením.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Úrazy dočasných zubů – Následky úrazu"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "Učební text přiřazuje žluté zbarvení k obliteraci dřeňové dutiny.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "false",
+          "explanationCs": "Růžovočervené zbarvení je spojeno s intrapulpálním krvácením; úplné vypadnutí zubu je avulze.",
+          "correctedStatementCs": "Růžovočervené zbarvení může signalizovat intrapulpální krvácení."
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Změna barvy může být projevem změn uvnitř dřeňové dutiny.",
+          "correctedStatementCs": "Barva korunky se po úrazu může měnit podle stavu pulpy."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": null,
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_017",
+      "origin": "generated_from_study",
+      "type": "select_incorrect",
+      "topic": "Anestezie",
+      "question": "Intrapulpální anestézie, co je chybné tvrzení?",
+      "options": {
+        "a": "Může sloužit jako doplněk při výkonu na vitální pulpě.",
+        "b": "Anestetikum se při ní aplikuje do dřeňové dutiny.",
+        "c": "Je totožná s povrchovou anestézií nanášenou na sliznici."
+      },
+      "sources": [
+        {
+          "type": "study_material",
+          "document": "study-base.docx",
+          "section": "Anestézie – Infiltrační intrapulpální anestézie"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanationCs": "Intrapulpální anestézie se používá jako doplněk při zákroku na vitální pulpě a anestetikum se aplikuje přímo do dřeňové dutiny.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Anestézie – Infiltrační intrapulpální anestézie"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "Ve studijních materiálech je uvedena jako doplněk infiltrační nebo svodné anestézie.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "true",
+          "explanationCs": "Anestetikum se zavádí přímo do dřeňové dutiny.",
+          "correctedStatementCs": null
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Povrchová anestézie se aplikuje na sliznici; intrapulpální přímo do zubní dřeně.",
+          "correctedStatementCs": "Intrapulpální anestézie znamená aplikaci anestetika do dřeňové dutiny."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": null,
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_018",
+      "origin": "generated_from_study",
+      "type": "select_correct",
+      "topic": "Funkční okluze",
+      "question": "Klidová poloha dolní čelisti, co je správné tvrzení?",
+      "options": {
+        "a": "Je to poloha, při níž musí být všechny zuby v maximální interkuspidaci.",
+        "b": "Je to relaxovaná poloha dolní čelisti, ve které jsou frontální zuby od sebe asi 2–3 mm.",
+        "c": "Je definována pouze maximálním otevřením úst."
+      },
+      "sources": [
+        {
+          "type": "study_material",
+          "document": "study-base.docx",
+          "section": "Funkční okluze – Klidová poloha"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanationCs": "Podle učebních materiálů je klidová poloha relaxovaná poloha mandibuly a frontální zuby jsou od sebe přibližně 2–3 mm.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Funkční okluze – Klidová poloha"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "false",
+          "explanationCs": "V klidové poloze nejsou zuby v maximální interkuspidaci.",
+          "correctedStatementCs": "Při klidové poloze je mandibula relaxovaná a zuby jsou mírně oddálené."
+        },
+        "b": {
+          "verdict": "true",
+          "explanationCs": "To odpovídá definici a orientační vzdálenosti ve studijním textu.",
+          "correctedStatementCs": null
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Maximální otevření úst není fyziologická klidová poloha.",
+          "correctedStatementCs": "Klidová poloha je relaxovaná poloha mandibuly bez pohybu."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": null,
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_019",
+      "origin": "generated_from_study",
+      "type": "select_incorrect",
+      "topic": "Funkční okluze",
+      "question": "Řezákové a špičákové vedení, co je chybné tvrzení?",
+      "options": {
+        "a": "Řezákové vedení souvisí s pohybem dolních řezáků po palatinálních plochách horních řezáků.",
+        "b": "Špičákové vedení se uplatňuje při pohybu dolní čelisti do stran.",
+        "c": "Řezákové vedení je definováno výhradně žvýkacími ploškami zadních molárů."
+      },
+      "sources": [
+        {
+          "type": "study_material",
+          "document": "study-base.docx",
+          "section": "Funkční okluze – Řezákové a špičákové vedení"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanationCs": "Řezákové vedení je spojeno s pohybem dolních řezáků po palatinálních plochách horních; špičákové vedení ovlivňuje laterální pohyby.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Funkční okluze – Řezákové a špičákové vedení"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "Studijní text popisuje dráhu dolních řezáků při propulzi a retropulzi.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "true",
+          "explanationCs": "Špičáky se podílejí na vedení a ochraně chrupu při pohybech do stran.",
+          "correctedStatementCs": null
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Řezákové vedení se týká frontálních řezáků, nikoli výhradně zadních molárů.",
+          "correctedStatementCs": "Řezákové vedení je dráha dolních řezáků po palatinálních plochách horních řezáků."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": null,
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_020",
+      "origin": "generated_from_study",
+      "type": "select_correct",
+      "topic": "Ortodoncie",
+      "question": "Anomálie postavení zubů, co je správné tvrzení?",
+      "options": {
+        "a": "Supraokluze znamená, že zub nedosahuje okluzní roviny.",
+        "b": "Infraokluze znamená, že zub přesahuje okluzní rovinu.",
+        "c": "Rotace zubu znamená otočení kolem jeho podélné osy."
+      },
+      "sources": [
+        {
+          "type": "study_material",
+          "document": "study-base.docx",
+          "section": "Ortodoncie – Anomálie polohy zubů"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanationCs": "Rotace je otočení zubu kolem podélné osy; supraokluze znamená přesah okluzní roviny a infraokluze její nedosažení.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Ortodoncie – Anomálie polohy zubů"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "false",
+          "explanationCs": "Nedosažení okluzní roviny se nazývá infraokluze.",
+          "correctedStatementCs": "Supraokluze znamená, že zub vertikálně přesahuje okluzní rovinu."
+        },
+        "b": {
+          "verdict": "false",
+          "explanationCs": "Přesah okluzní roviny odpovídá supraokluzi.",
+          "correctedStatementCs": "Infraokluze znamená, že zub nedosahuje okluzní roviny."
+        },
+        "c": {
+          "verdict": "true",
+          "explanationCs": "To je definice rotace uvedená v učebních materiálech.",
+          "correctedStatementCs": null
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": null,
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_021",
+      "origin": "generated_from_study",
+      "type": "select_incorrect",
+      "topic": "Pedostomatologie",
+      "question": "Pulpotomie dočasných zubů, co je chybné tvrzení?",
+      "options": {
+        "a": "Spontánní noční bolest patří podle studijních materiálů mezi kontraindikace vitální pulpotomie.",
+        "b": "Otok a píštěl mohou být důvodem, proč vitální pulpotomii neprovést.",
+        "c": "Hnisavý exsudát z pulpy během ošetření potvrzuje vhodnost vitální pulpotomie."
+      },
+      "sources": [
+        {
+          "type": "study_material",
+          "document": "study-base.docx",
+          "section": "Pulpotomie dočasných zubů – Kontraindikace"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanationCs": "Spontánní bolest, otok, píštěl i hnisavý exsudát jsou v materiálech uvedeny mezi varovnými nálezy proti vitální pulpotomii.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Pulpotomie dočasných zubů – Kontraindikace"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "Ve studijním textu je uvedena noční a spontánní denní bolest jako kontraindikace.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "true",
+          "explanationCs": "Otok a píštěl patří v textu mezi kontraindikace při vstupním vyšetření.",
+          "correctedStatementCs": null
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Hnisavý exsudát je uveden mezi kontraindikacemi v průběhu zákroku.",
+          "correctedStatementCs": "Hnisavý exsudát během ošetření je kontraindikací vitální pulpotomie."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": null,
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_022",
+      "origin": "generated_from_study",
+      "type": "select_correct",
+      "topic": "Endodoncie",
+      "question": "Indikace reendodontického ošetření (reRCT), co je správné tvrzení?",
+      "options": {
+        "a": "ReRCT je indikováno výhradně u zubů bez předchozí kořenové výplně.",
+        "b": "ReRCT může být indikováno u nedostatečné kořenové výplně spojené s klinickým či RTG nálezem.",
+        "c": "Nedostatečná kořenová výplň s klinickým nálezem je vždy důvodem pouze k bělení zubu."
+      },
+      "sources": [
+        {
+          "type": "study_material",
+          "document": "study-base.docx",
+          "section": "Endodoncie II. – Indikace revize (reRCT)"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanationCs": "Studijní materiál uvádí reRCT u nedostatečné kořenové výplně s klinickým nebo RTG nálezem a v některých případech před protetickou sanací.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Endodoncie II. – Indikace revize (reRCT)"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "false",
+          "explanationCs": "ReRCT je opakované endodontické ošetření již dříve ošetřeného zubu.",
+          "correctedStatementCs": "ReRCT je revize dřívějšího endodontického ošetření."
+        },
+        "b": {
+          "verdict": "true",
+          "explanationCs": "Tato indikace je přímo uvedena v učebních podkladech.",
+          "correctedStatementCs": null
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "U nedostatečné kořenové výplně s klinickým nálezem může být indikována revize endodontického ošetření.",
+          "correctedStatementCs": "Nedostatečná kořenová výplň s klinickým či RTG nálezem může být důvodem k reRCT."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": null,
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_023",
+      "origin": "generated_from_study",
+      "type": "select_correct",
+      "topic": "Endodoncie",
+      "question": "Akutní apikální periodontitis, co je správné tvrzení?",
+      "options": {
+        "a": "Zub bývá citlivý na skus a poklep, bolest je obvykle dobře lokalizovaná.",
+        "b": "Akutní apikální periodontitis se typicky projevuje jen svěděním gingivy bez citlivosti zubu.",
+        "c": "Při akutní apikální periodontitidě není možné pozorovat změnu periodontální štěrbiny na RTG."
+      },
+      "sources": [
+        {
+          "type": "study_material",
+          "document": "study-base.docx",
+          "section": "Endodoncie I. – Periodontitis apicalis acuta"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanationCs": "Podle učebního textu je pro akutní apikální periodontitidu typická dobře lokalizovaná bolest, citlivost na skus a poklep a možné rozšíření periodontální štěrbiny.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Endodoncie I. – Periodontitis apicalis acuta"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "Zdrojem bolesti je zánět periodoncia; typická je citlivost při skusu a poklepu.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "false",
+          "explanationCs": "Studijní text naopak uvádí bolest při kousání a poklepu.",
+          "correctedStatementCs": "Akutní apikální periodontitis se může projevit dobře lokalizovanou bolestí a citlivostí na skus."
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "V materiálu je mezi RTG nálezy uvedeno rozšíření periodontální štěrbiny.",
+          "correctedStatementCs": "Na RTG může být u akutní apikální periodontitidy patrné rozšíření periodontální štěrbiny."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": null,
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_024",
+      "origin": "generated_from_study",
+      "type": "select_incorrect",
+      "topic": "Endodoncie",
+      "question": "Chronická apikální periodontitis, co je chybné tvrzení?",
+      "options": {
+        "a": "Může být bez subjektivních obtíží.",
+        "b": "Na RTG se vždy projevuje výhradně neporušenou kostí bez periapikálního nálezu.",
+        "c": "Na RTG může být patrné ohraničené nebo neohraničené apikální projasnění."
+      },
+      "sources": [
+        {
+          "type": "study_material",
+          "document": "study-base.docx",
+          "section": "Endodoncie I. – Periodontitis apicalis chronica"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanationCs": "Chronická apikální periodontitis může probíhat bez obtíží a na RTG se projevovat periapikálním projasněním.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Endodoncie I. – Periodontitis apicalis chronica"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "Učební materiál výslovně uvádí možnost asymptomatického průběhu.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "false",
+          "explanationCs": "Studijní text uvádí periapikální RTG nález, nikoli vždy normální kost.",
+          "correctedStatementCs": "U chronické apikální periodontitidy se na RTG může objevit periapikální projasnění."
+        },
+        "c": {
+          "verdict": "true",
+          "explanationCs": "Materiál rozlišuje formu circumscripta (ohraničenou) a difusa (neohraničenou).",
+          "correctedStatementCs": null
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": null,
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_025",
+      "origin": "generated_from_study",
+      "type": "select_correct",
+      "topic": "Temporomandibulární kloub",
+      "question": "Anatomie temporomandibulárního kloubu, co je správné tvrzení?",
+      "options": {
+        "a": "Discus articularis je uložen mimo kloubní pouzdro a neovlivňuje kloubní štěrbinu.",
+        "b": "Kloubní povrchy TMK jsou podle učebního textu pokryty pouze zubní sklovinou.",
+        "c": "Discus articularis rozděluje kloub na horní a dolní kloubní štěrbinu."
+      },
+      "sources": [
+        {
+          "type": "study_material",
+          "document": "study-base.docx",
+          "section": "Funkční okluze – Temporomandibulární kloub, discus articularis"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanationCs": "TMK obsahuje kloubní disk, který odděluje horní a dolní kloubní prostor.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Funkční okluze – Temporomandibulární kloub, discus articularis"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "false",
+          "explanationCs": "Disk je součástí kloubu a odděluje jeho horní a dolní prostor.",
+          "correctedStatementCs": "Discus articularis rozděluje TMK na horní a dolní kloubní štěrbinu."
+        },
+        "b": {
+          "verdict": "false",
+          "explanationCs": "Studijní text uvádí vazivovou chrupavku na kloubních površích TMK.",
+          "correctedStatementCs": "Kloubní povrchy TMK jsou pokryty vazivovou chrupavkou."
+        },
+        "c": {
+          "verdict": "true",
+          "explanationCs": "Tato anatomická funkce disku je uvedena přímo v podkladech.",
+          "correctedStatementCs": null
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": null,
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_026",
+      "origin": "generated_from_study",
+      "type": "select_incorrect",
+      "topic": "Temporomandibulární kloub",
+      "question": "Pohyby v temporomandibulárním kloubu, co je chybné tvrzení?",
+      "options": {
+        "a": "Translační pohyb znamená posun kloubní hlavice šikmo dopředu a dolů.",
+        "b": "Otevírání úst probíhá výhradně translačním pohybem bez rotace.",
+        "c": "Při otevírání úst se nejprve uplatňuje rotace, následně se kombinuje s translací."
+      },
+      "sources": [
+        {
+          "type": "study_material",
+          "document": "study-base.docx",
+          "section": "Funkční okluze – Pohyby v TMK"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanationCs": "Otevírání úst je složený pohyb: začíná rotací a následně se přidává translace.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Funkční okluze – Pohyby v TMK"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "Translaci popisují podklady jako posun kondylu šikmo dopředu a dolů.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "false",
+          "explanationCs": "Podle materiálu je otevírání úst kombinací rotačního a posuvného pohybu.",
+          "correctedStatementCs": "Při otevírání úst se uplatňuje rotace a translace."
+        },
+        "c": {
+          "verdict": "true",
+          "explanationCs": "Po počáteční rotaci se připojuje translační pohyb.",
+          "correctedStatementCs": null
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": null,
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_027",
+      "origin": "generated_from_study",
+      "type": "select_correct",
+      "topic": "Temporomandibulární kloub",
+      "question": "Dislokace disku TMK s repozicí, co je správné tvrzení?",
+      "options": {
+        "a": "Typickým příznakem může být lupání při otevírání a zavírání úst.",
+        "b": "Při každém pohybu je mandibula zcela nehybná a otevírání úst je nemožné.",
+        "c": "U dislokace disku s repozicí není podle učebních materiálů nikdy slyšet kloubní zvuk."
+      },
+      "sources": [
+        {
+          "type": "study_material",
+          "document": "study-base.docx",
+          "section": "Funkční okluze – Dislokace disku s repozicí"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanationCs": "U dislokace disku s repozicí je v učebním textu popisováno lupání při otevírání i zavírání úst; pohyb nemusí být omezen.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Funkční okluze – Dislokace disku s repozicí"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "Podklady uvádějí často dvě lupnutí, při otevření a při zavření.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "false",
+          "explanationCs": "Podle textu nebývá pohyb při dislokaci disku s repozicí omezen.",
+          "correctedStatementCs": "Při dislokaci disku s repozicí může být rozsah pohybu zachovaný."
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Lupání je v materiálu uvedeno jako hlavní příznak.",
+          "correctedStatementCs": "U dislokace disku s repozicí může být slyšitelné lupání v TMK."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": null,
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_028",
+      "origin": "generated_from_study",
+      "type": "select_correct",
+      "topic": "Pedostomatologie",
+      "question": "Komunikace s dětským pacientem, co je správné tvrzení?",
+      "options": {
+        "a": "Vysvětlení výkonu dítěti není nutné a pomáhá jej vždy překvapit novým nástrojem.",
+        "b": "Technika tell-show-do patří k postupům snižujícím strach dítěte při ošetření.",
+        "c": "Dítěti je vhodné záměrně lhát o plánovaném postupu, aby zůstalo v klidu."
+      },
+      "sources": [
+        {
+          "type": "study_material",
+          "document": "study-base.docx",
+          "section": "Pedostomatologie – Ošetření dětského pacienta, Co dělat, aby se pacient nebál?"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanationCs": "Studijní materiály doporučují dítěti postup vysvětlit, ukázat a provést (tell-show-do) a nepřekvapovat ho.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Pedostomatologie – Ošetření dětského pacienta, Co dělat, aby se pacient nebál?"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "false",
+          "explanationCs": "Učební text zdůrazňuje předvídatelnost výkonu a vysvětlení předem.",
+          "correctedStatementCs": "Dítě je vhodné předem informovat o tom, co se bude dít."
+        },
+        "b": {
+          "verdict": "true",
+          "explanationCs": "Tell-show-do je přímo jmenována mezi postupy ke zmírnění obav dítěte.",
+          "correctedStatementCs": null
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Studijní text zdůrazňuje zásadu nelhat a nicím dítě nepřekvapit.",
+          "correctedStatementCs": "S dítětem je vhodné komunikovat pravdivě a přiměřeně věku."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": null,
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_029",
+      "origin": "generated_from_study",
+      "type": "select_incorrect",
+      "topic": "Pedostomatologie",
+      "question": "Příprava dítěte na stomatologické ošetření, co je chybné tvrzení?",
+      "options": {
+        "a": "Seznámení s ordinací a přístroji může být součástí první návštěvy.",
+        "b": "Podle učebních materiálů je vhodné volit slova přiměřená věku dítěte.",
+        "c": "Dítě je vhodné předem strašit vrtáním a trháním zubů, aby spolupracovalo."
+      },
+      "sources": [
+        {
+          "type": "study_material",
+          "document": "study-base.docx",
+          "section": "Pedostomatologie – Pravidla práce s dětským pacientem, Příprava dítěte k ošetření"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanationCs": "Podklady doporučují postupné seznámení s ordinací, přiměřenou komunikaci a vyhýbání se zastrašování.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Pedostomatologie – Pravidla práce s dětským pacientem, Příprava dítěte k ošetření"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "Studijní materiál uvádí přivítání a seznámení s týmem a vybavením.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "true",
+          "explanationCs": "Učební text doporučuje mluvit s dítětem jeho řečí.",
+          "correctedStatementCs": null
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Zastrašování zubním ošetřením je v textu výslovně odmítáno.",
+          "correctedStatementCs": "Dítě nepřipravujeme strašením; volíme přiměřené vysvětlení a pozitivní komunikaci."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": null,
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_030",
+      "origin": "generated_from_study",
+      "type": "select_correct",
+      "topic": "Ortodoncie",
+      "question": "Skeletální třídy a profil obličeje, co je správné tvrzení?",
+      "options": {
+        "a": "Pro II. skeletální třídu je podle učebního textu charakteristický konvexní profil.",
+        "b": "Pro II. skeletální třídu je podle učebního textu charakteristický výhradně konkávní profil.",
+        "c": "Pro III. skeletální třídu je podle učebního textu typický pouze přímý profil."
+      },
+      "sources": [
+        {
+          "type": "study_material",
+          "document": "study-base.docx",
+          "section": "Ortodoncie – Vyšetření, profil obličeje"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanationCs": "Učební text přiřazuje konvexní profil II. skeletální třídě, přímý I. třídě a konkávní III. třídě.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Ortodoncie – Vyšetření, profil obličeje"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "V učebním textu je konvexní profil uveden pro II. skeletální třídu.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "false",
+          "explanationCs": "Konkávní profil je v materiálu charakteristický pro III. třídu.",
+          "correctedStatementCs": "Pro II. skeletální třídu je charakteristický konvexní profil."
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Přímý profil je v materiálu spojován s I. skeletální třídou.",
+          "correctedStatementCs": "Pro III. skeletální třídu je charakteristický konkávní profil."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": null,
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_031",
+      "origin": "generated_from_study",
+      "type": "select_incorrect",
+      "topic": "Ortodoncie",
+      "question": "Snímací ortodontické aparáty, co je chybné tvrzení?",
+      "options": {
+        "a": "Monoblok je spojením horní a dolní desky do jednoho aparátu.",
+        "b": "Monoblok je vždy výhradně fixní aparát lepený na každý jednotlivý zub.",
+        "c": "Monoblok může ovlivňovat mezičelistní vztahy."
+      },
+      "sources": [
+        {
+          "type": "study_material",
+          "document": "study-base.docx",
+          "section": "Ortodoncie – Snímací ortodontický aparát, Monoblok"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanationCs": "Monoblok je snímací funkční aparát tvořený spojením horní a dolní desky; ovlivňuje mezičelistní vztahy.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Ortodoncie – Snímací ortodontický aparát, Monoblok"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "Studijní text popisuje monoblok jako spojení horní a dolní desky.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "false",
+          "explanationCs": "V materiálu je uveden mezi snímacími ortodontickými aparáty.",
+          "correctedStatementCs": "Monoblok patří mezi snímací ortodontické aparáty."
+        },
+        "c": {
+          "verdict": "true",
+          "explanationCs": "Text výslovně uvádí ovlivnění mezičelistních vztahů ve všech rovinách.",
+          "correctedStatementCs": null
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": null,
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_032",
+      "origin": "generated_from_study",
+      "type": "select_correct",
+      "topic": "Anestezie a sedace",
+      "question": "Entonox při stomatologickém ošetření, co je správné tvrzení?",
+      "options": {
+        "a": "Sedace Entonoxem nahrazuje lokální anestézii při každém bolestivém výkonu.",
+        "b": "Entonox je podle učebního textu směs výhradně kyslíku bez oxidu dusného.",
+        "c": "Entonox je směs oxidu dusného a kyslíku v poměru 50 : 50."
+      },
+      "sources": [
+        {
+          "type": "study_material",
+          "document": "study-base.docx",
+          "section": "Anestezie – Entonox"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanationCs": "Podle studijního materiálu Entonox obsahuje 50 % oxidu dusného a 50 % kyslíku; sedace nenahrazuje lokální anestézii.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Anestezie – Entonox"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "false",
+          "explanationCs": "Studijní text výslovně říká, že sedace oxidem dusným nenahrazuje lokální anestézii.",
+          "correctedStatementCs": "Sedace Entonoxem nenahrazuje lokální anestézii."
+        },
+        "b": {
+          "verdict": "false",
+          "explanationCs": "Entonox obsahuje oxid dusný i kyslík, nikoli pouze kyslík.",
+          "correctedStatementCs": "Entonox obsahuje oxid dusný a kyslík ve stejném poměru."
+        },
+        "c": {
+          "verdict": "true",
+          "explanationCs": "Poměr 50 % ku 50 % je výslovně uveden v učebním textu.",
+          "correctedStatementCs": null
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": null,
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_033",
+      "origin": "generated_from_study",
+      "type": "select_incorrect",
+      "topic": "Endodoncie",
+      "question": "Vnitřní granulom zubní pulpy, co je chybné tvrzení?",
+      "options": {
+        "a": "Proces může dlouho probíhat bez zjevných subjektivních obtíží.",
+        "b": "Na RTG může být nalezeno oválné projasnění v oblasti kořenového kanálku.",
+        "c": "Jde vždy o akutní zánět výhradně na povrchu skloviny bez souvislosti s pulpou."
+      },
+      "sources": [
+        {
+          "type": "study_material",
+          "document": "study-base.docx",
+          "section": "Endodoncie I. – Vnitřní granulom, pulpitis chronica granulomatosa clausa"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanationCs": "Vnitřní granulom je v učebním textu popisován jako chronické postižení vycházející z pulpy, často s náhodným RTG nálezem.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Endodoncie I. – Vnitřní granulom, pulpitis chronica granulomatosa clausa"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "V materiálu je uvedeno, že proces bývá většinou klinicky němý.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "true",
+          "explanationCs": "Učební text uvádí oválné RTG projasnění jako častý náhodný nález.",
+          "correctedStatementCs": null
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Vnitřní granulom vychází z pulpy uvnitř kořenového kanálku.",
+          "correctedStatementCs": "Vnitřní granulom je chronické postižení pulpy v kořenovém kanálku."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": null,
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_034",
+      "origin": "generated_from_study",
+      "type": "select_incorrect",
+      "topic": "Pedostomatologie",
+      "question": "Komunikace při ošetřování dětského pacienta, co je chybné tvrzení?",
+      "options": {
+        "a": "Vhodně formulované pokyny a přiměřený tón hlasu usnadňují spolupráci.",
+        "b": "Postoj rodičů může ovlivnit chování dítěte při ošetření.",
+        "c": "Spolupráce dítěte je podle učebního textu zcela nezávislá na rodičích a komunikaci lékaře."
+      },
+      "sources": [
+        {
+          "type": "study_material",
+          "document": "study-base.docx",
+          "section": "Pedostomatologie – Faktory ovlivňující spolupráci a komunikace"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanationCs": "Studijní text zdůrazňuje spolupráci pacienta, lékaře a rodiče a význam verbální i neverbální komunikace.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Pedostomatologie – Faktory ovlivňující spolupráci a komunikace"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "Učební text doporučuje volit vhodná slova a tón hlasu.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "true",
+          "explanationCs": "V podkladech je uvedeno, že postoj rodiče se podílí na chování dítěte.",
+          "correctedStatementCs": null
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Materiál jmenuje mezi faktory spolupráce dítě, rodiče i situační vlivy.",
+          "correctedStatementCs": "Spolupráci ovlivňuje dítě, rodiče i komunikace a situace při ošetření."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": null,
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_035",
+      "origin": "generated_from_study",
+      "type": "select_correct",
+      "topic": "Kariologie",
+      "question": "Komplikace neléčeného zubního kazu, co je správné tvrzení?",
+      "options": {
+        "a": "Neléčený kaz postihuje výhradně sklovinu a nikdy nevyvolává zánět pulpy.",
+        "b": "Rozsáhlý neléčený kaz může vést k zánětu pulpy a následně periodoncia.",
+        "c": "Zubní kaz nemůže být příčinou submukózního abscesu."
+      },
+      "sources": [
+        {
+          "type": "study_material",
+          "document": "study-base.docx",
+          "section": "Pedostomatologie – Komplikace zubního kazu"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanationCs": "Podle studijního textu patří mezi komplikace kazu pulpitida, postižení periodoncia a abscesy.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Pedostomatologie – Komplikace zubního kazu"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "false",
+          "explanationCs": "Zubní kaz může pronikat do hlubších tkání a vyvolat pulpitidu.",
+          "correctedStatementCs": "Pokročilý kaz může způsobit zánět zubní dřeně."
+        },
+        "b": {
+          "verdict": "true",
+          "explanationCs": "Neléčený kaz může postupovat do pulpy a dále do periodoncia.",
+          "correctedStatementCs": null
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Mezi komplikace kazu jsou uvedeny také submukózní a subperiostální abscesy.",
+          "correctedStatementCs": "Neléčený kaz může vést ke vzniku abscesu."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": null,
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_036",
+      "origin": "generated_from_study",
+      "type": "select_incorrect",
+      "topic": "Kariologie",
+      "question": "ART (atraumatická restorativní technika), co je chybné tvrzení?",
+      "options": {
+        "a": "ART se podle studijního textu v současnosti používá výhradně v rozvojových zemích.",
+        "b": "ART byla původně rozvíjena pro použití v rozvojových zemích.",
+        "c": "Při ART se kariézní tkáně odstraňují ručními nástroji."
+      },
+      "sources": [
+        {
+          "type": "study_material",
+          "document": "study-base.docx",
+          "section": "Pedostomatologie – ART"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanationCs": "ART byla určena zejména pro rozvojové země, ale využívá se i v zemích vyspělých.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Pedostomatologie – ART"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "false",
+          "explanationCs": "Studijní materiál výslovně uvádí využití ART také ve vyspělých zemích.",
+          "correctedStatementCs": "ART se využívá v rozvojových i vyspělých zemích."
+        },
+        "b": {
+          "verdict": "true",
+          "explanationCs": "Původně byla metoda určena pro rozvojové země.",
+          "correctedStatementCs": null
+        },
+        "c": {
+          "verdict": "true",
+          "explanationCs": "Učební text popisuje manuální odstranění kariézních tkání.",
+          "correctedStatementCs": null
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": null,
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_037",
+      "origin": "generated_from_study",
+      "type": "select_correct",
+      "topic": "Kariologie",
+      "question": "Kaz blízký dřeni u dočasného zubu, co je správné tvrzení?",
+      "options": {
+        "a": "Interradikulární patologický nález na RTG potvrzuje vhodnost nepřímého překrytí.",
+        "b": "Spontánní noční bolest je podle studijního textu podmínkou nepřímého překrytí.",
+        "c": "Nepřímé překrytí lze zvažovat při absenci spontánní bolesti a bez periapikálního či interradikulárního nálezu."
+      },
+      "sources": [
+        {
+          "type": "study_material",
+          "document": "study-base.docx",
+          "section": "Endodontické ošetření dočasných zubů – Nepřímé překrytí"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanationCs": "Učební text spojuje nepřímé překrytí s nepřítomností spontánní bolesti a patologického RTG nálezu.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Endodontické ošetření dočasných zubů – Nepřímé překrytí"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "false",
+          "explanationCs": "Periapikální a interradikulární patologický nález mezi vhodné podmínky nepatří.",
+          "correctedStatementCs": "Při nepřímém překrytí má být RTG bez patologického periapikálního a interradikulárního nálezu."
+        },
+        "b": {
+          "verdict": "false",
+          "explanationCs": "Spontánní noční bolest je v textu uvedena jako nepříznivý příznak.",
+          "correctedStatementCs": "Pro nepřímé překrytí nemá být přítomna spontánní noční bolest."
+        },
+        "c": {
+          "verdict": "true",
+          "explanationCs": "Popsané podmínky odpovídají uvedené indikaci v textu.",
+          "correctedStatementCs": null
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": null,
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_038",
+      "origin": "generated_from_study",
+      "type": "select_correct",
+      "topic": "Endodoncie",
+      "question": "ISO označení endodontických nástrojů, co je správné tvrzení?",
+      "options": {
+        "a": "Číslo ISO 25 označuje délku pracovního nástroje 25 mm.",
+        "b": "Číslo ISO 25 označuje průměr hrotu 0,25 mm.",
+        "c": "Číslo ISO 25 znamená délku pracovní části 25 mm."
+      },
+      "sources": [
+        {
+          "type": "study_material",
+          "document": "study-base.docx",
+          "section": "Endodoncie – Nástroje k opracování, ISO norma"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanationCs": "Podle učebního textu se velikost ISO udává průměrem hrotu v setinách milimetru; pracovní část má 16 mm.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Endodoncie – Nástroje k opracování, ISO norma"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "false",
+          "explanationCs": "Délka nástroje a velikost ISO jsou odlišné parametry.",
+          "correctedStatementCs": "ISO 25 označuje průměr hrotu 0,25 mm, nikoli délku nástroje."
+        },
+        "b": {
+          "verdict": "true",
+          "explanationCs": "ISO 25 znamená průměr 25 setin milimetru.",
+          "correctedStatementCs": null
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Studijní text uvádí pracovní část nástroje 16 mm.",
+          "correctedStatementCs": "Pracovní část standardních endodontických nástrojů má podle učebního textu 16 mm."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": null,
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_039",
+      "origin": "generated_from_study",
+      "type": "select_incorrect",
+      "topic": "Endodoncie",
+      "question": "Ruční endodontické nástroje, co je chybné tvrzení?",
+      "options": {
+        "a": "K-reamer má podle studijních materiálů trojúhelníkový průřez.",
+        "b": "K-file má podle studijních materiálů čtvercový průřez.",
+        "c": "Hedströmův nástroj má podle studijních materiálů vždy čtvercový průřez."
+      },
+      "sources": [
+        {
+          "type": "study_material",
+          "document": "study-base.docx",
+          "section": "Endodoncie – Ruční nástroje, průřezy"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanationCs": "Učební materiál uvádí pro K-reamer trojúhelníkový, pro K-file čtvercový a pro Hedströmův nástroj kruhový průřez.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Endodoncie – Ruční nástroje, průřezy"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "Učební text výslovně uvádí u K-reameru trojúhelník.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "true",
+          "explanationCs": "Učební text uvádí u K-file čtverec.",
+          "correctedStatementCs": null
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "V podkladech je Hedström spojen s kruhovým, nikoli čtvercovým průřezem.",
+          "correctedStatementCs": "Hedströmův nástroj má podle studijních materiálů kruhový průřez."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": null,
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_040",
+      "origin": "generated_from_study",
+      "type": "select_correct",
+      "topic": "Endodoncie",
+      "question": "Ultrazvukové nástroje Start-X, co je správné tvrzení?",
+      "options": {
+        "a": "Start-X 3 je v podkladech označen výhradně jako nástroj k měření hloubky skusu.",
+        "b": "Start-X 3 je v podkladech určen mimo jiné k odstranění kalcifikací a FRC čepů.",
+        "c": "Start-X 3 se v podkladech používá výhradně k aplikaci infiltrační anestézie."
+      },
+      "sources": [
+        {
+          "type": "study_material",
+          "document": "study-base.docx",
+          "section": "Endodoncie – Trepanační otvor a systém Start-X"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanationCs": "Materiály rozlišují nástroje Start-X podle účelu; Start-X 3 je určen k odstranění kalcifikací a FRC čepů.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Endodoncie – Trepanační otvor a systém Start-X"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "false",
+          "explanationCs": "Měření skusu není uvedeným účelem nástroje Start-X 3.",
+          "correctedStatementCs": "Start-X 3 slouží k odstranění kalcifikací a FRC čepů."
+        },
+        "b": {
+          "verdict": "true",
+          "explanationCs": "Text přiřazuje Start-X 3 k odstranění kalcifikací a sklovláknových čepů.",
+          "correctedStatementCs": null
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Start-X 3 patří mezi ultrazvukové endodontické koncovky.",
+          "correctedStatementCs": "Start-X 3 se používá k odstranění kalcifikací a FRC čepů."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": null,
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_041",
+      "origin": "generated_from_study",
+      "type": "select_correct",
+      "topic": "Anestezie",
+      "question": "Submukózní infiltrační anestézie u dítěte, co je správné tvrzení?",
+      "options": {
+        "a": "Tento typ anestézie je totožný s nanesením gelu na sliznici.",
+        "b": "Vpich se provádí výhradně do dřeňové dutiny zubu.",
+        "c": "Vpich se podle studijních materiálů provádí do napnuté přechodní řasy."
+      },
+      "sources": [
+        {
+          "type": "study_material",
+          "document": "study-base.docx",
+          "section": "Anestezie – Infiltrační submukózní anestézie"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanationCs": "Submukózní infiltrační anestézie se aplikuje do tkáně; v textu je popsán vpich do napnuté přechodní řasy.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Anestezie – Infiltrační submukózní anestézie"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "false",
+          "explanationCs": "Nanesení gelu je povrchová anestézie.",
+          "correctedStatementCs": "Infiltrační submukózní anestézie vyžaduje aplikaci anestetika do tkáně."
+        },
+        "b": {
+          "verdict": "false",
+          "explanationCs": "Aplikace do dřeňové dutiny patří k intrapulpální anestézii.",
+          "correctedStatementCs": "Při submukózní infiltrační anestézii se anestetikum aplikuje do podslizniční tkáně."
+        },
+        "c": {
+          "verdict": "true",
+          "explanationCs": "Jde o techniku výslovně uvedenou v učebním textu.",
+          "correctedStatementCs": null
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": null,
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_042",
+      "origin": "generated_from_study",
+      "type": "select_correct",
+      "topic": "Anestezie",
+      "question": "Svodná anestézie v oblasti foramen infraorbitale, co je správné tvrzení?",
+      "options": {
+        "a": "Znecitlivuje oblast inervovanou n. infraorbitalis, včetně příslušné poloviny horního rtu.",
+        "b": "Znecitlivuje výhradně kůži brady a dolního rtu.",
+        "c": "Je zaměřena na n. lingualis v oblasti foramen mandibulae."
+      },
+      "sources": [
+        {
+          "type": "study_material",
+          "document": "study-base.docx",
+          "section": "Anestezie – Foramen infraorbitale"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanationCs": "Podle učebního textu se blokádou n. infraorbitalis znecitlivuje tvář, polovina horního rtu a horní frontální zuby.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Anestezie – Foramen infraorbitale"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "To odpovídá popisu oblasti inervace n. infraorbitalis.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "false",
+          "explanationCs": "Brada a dolní ret jsou uvedeny u anestezie v oblasti foramen mentale.",
+          "correctedStatementCs": "Anestezie na foramen infraorbitale zahrnuje příslušnou polovinu horního rtu."
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "N. lingualis se v textu zmiňuje u anestezie na foramen mandibulae.",
+          "correctedStatementCs": "Anestezie na foramen infraorbitale se týká n. infraorbitalis."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": null,
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_043",
+      "origin": "generated_from_study",
+      "type": "select_incorrect",
+      "topic": "Anestezie",
+      "question": "Anestézie v oblasti foramen mentale, co je chybné tvrzení?",
+      "options": {
+        "a": "Je určena primárně ke znecitlivění horních frontálních zubů prostřednictvím n. infraorbitalis.",
+        "b": "Znecitlivuje kůži příslušné poloviny brady.",
+        "c": "Znecitlivuje sliznici a kůži příslušné poloviny dolního rtu."
+      },
+      "sources": [
+        {
+          "type": "study_material",
+          "document": "study-base.docx",
+          "section": "Anestezie – Foramen mentale"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanationCs": "Foramen mentale souvisí s n. mentalis a citlivostí dolního rtu a brady, nikoliv n. infraorbitalis.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Anestezie – Foramen mentale"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "false",
+          "explanationCs": "Horní frontální zuby a n. infraorbitalis patří k jinému místu svodné anestezie.",
+          "correctedStatementCs": "Anestezie na foramen mentale znecitlivuje sliznici a kůži dolního rtu a brady na příslušné straně."
+        },
+        "b": {
+          "verdict": "true",
+          "explanationCs": "Brada je v popisu rozsahu této anestezie.",
+          "correctedStatementCs": null
+        },
+        "c": {
+          "verdict": "true",
+          "explanationCs": "Dolní ret je v popisu rozsahu této anestezie.",
+          "correctedStatementCs": null
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": null,
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_044",
+      "origin": "generated_from_study",
+      "type": "select_correct",
+      "topic": "Pedostomatologie",
+      "question": "Kořeny dočasných molárů, co je správné tvrzení?",
+      "options": {
+        "a": "Dolní dočasné moláry mají podle studijního textu obvykle tři kořeny.",
+        "b": "Horní dočasné moláry mají podle studijního textu obvykle tři kořeny.",
+        "c": "Dočasné moláry jsou podle studijního textu vždy jednokořenové."
+      },
+      "sources": [
+        {
+          "type": "study_material",
+          "document": "study-base.docx",
+          "section": "Endodontické ošetření dočasných zubů – Morfologie"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanationCs": "Učební materiál uvádí tři kořeny u horních dočasných molárů a dva u dolních.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Endodontické ošetření dočasných zubů – Morfologie"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "false",
+          "explanationCs": "Dolní dočasné moláry mají v učebním textu dva kořeny.",
+          "correctedStatementCs": "Dolní dočasné moláry mají obvykle dva kořeny."
+        },
+        "b": {
+          "verdict": "true",
+          "explanationCs": "Podle textu je jeden kořen palatinální a dva bukální.",
+          "correctedStatementCs": null
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Dočasné moláry jsou vícekořenové zuby.",
+          "correctedStatementCs": "Dočasné moláry mají více kořenů; horní typicky tři a dolní dva."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": null,
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_045",
+      "origin": "generated_from_study",
+      "type": "select_correct",
+      "topic": "Pedostomatologie",
+      "question": "Mezizubní hygiena u dítěte, co je správné tvrzení?",
+      "options": {
+        "a": "Mezizubní hygienu není nutné řešit až do prořezání všech stálých zubů.",
+        "b": "Flosspick se podle studijních materiálů zavádí po vzniku prvního uzavřeného mezizubního prostoru.",
+        "c": "Flosspick je podle studijních materiálů náhradou fluoridové zubní pasty."
+      },
+      "sources": [
+        {
+          "type": "study_material",
+          "document": "study-base.docx",
+          "section": "Pedostomatologie – Dentální pomůcky a hygiena"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanationCs": "Učební text doporučuje flosspick od prvního uzavřeného mezizubního prostoru.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Pedostomatologie – Dentální pomůcky a hygiena"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "false",
+          "explanationCs": "Mezizubní péče se řeší podle kontaktů zubů už v dočasném chrupu.",
+          "correctedStatementCs": "Mezizubní hygienu u dítěte zahajujeme podle potřeby při uzavřených mezizubních prostorech."
+        },
+        "b": {
+          "verdict": "true",
+          "explanationCs": "Takto je načasování uvedeno ve studijních podkladech.",
+          "correctedStatementCs": null
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Flosspick doplňuje čištění kartáčkem a fluoridovou pastou.",
+          "correctedStatementCs": "Flosspick slouží k mezizubní hygieně, nenahrazuje zubní pastu."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": null,
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_046",
+      "origin": "generated_from_study",
+      "type": "select_incorrect",
+      "topic": "Pedostomatologie",
+      "question": "První preventivní návštěva dítěte u zubního lékaře, co je chybné tvrzení?",
+      "options": {
+        "a": "Podle studijního textu má první návštěva souviset s prořezáním prvního zubu.",
+        "b": "Pravidelné kontroly jsou součástí prevence kazu raného dětství.",
+        "c": "Podle studijního textu je vhodné čekat s první návštěvou až do prořezání stálých molárů."
+      },
+      "sources": [
+        {
+          "type": "study_material",
+          "document": "study-base.docx",
+          "section": "Pedostomatologie – Stomatolog a dětský pacient"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanationCs": "Učební materiál doporučuje první stomatologickou návštěvu již s prvním zubem.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Pedostomatologie – Stomatolog a dětský pacient"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "Materiály doporučují první kontrolu při prořezání prvního zubu.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "true",
+          "explanationCs": "Pravidelná vyšetření jsou uvedena mezi pravidly prevence ECC.",
+          "correctedStatementCs": null
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Studijní podklady nedoporučují čekat až na stálé moláry.",
+          "correctedStatementCs": "První návštěva má podle učebního textu proběhnout s prořezáním prvního zubu."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": null,
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    }
+  ],
+  "openQuestions": [
+    {
+      "id": "open_001",
+      "type": "open_text",
+      "topic": "Endodoncie",
+      "question": "Rozděl poškození pulpy podle Baumeho.",
+      "modelAnswerCs": "Zdravá pulpa; reverzibilně postižená pulpa; ireverzibilně postižená pulpa; nekrotická pulpa.",
+      "acceptedAlternativesCs": [
+        "Zdravá, reverzibilně postižená, ireverzibilně postižená a nekrotická pulpa."
+      ],
+      "explanationCs": "Baumeho klinické dělení rozlišuje čtyři stavy pulpy podle jejího poškození.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "page": 1
+        },
+        {
+          "document": "study-base.docx",
+          "page": 45
+        }
+      ],
+      "externalReferences": [],
+      "evaluationMode": "self_review",
+      "expectedElementsCs": [
+        "zdravá pulpa",
+        "reverzibilně postižená pulpa",
+        "ireverzibilně postižená pulpa",
+        "nekrotická pulpa"
+      ],
+      "verificationNoteCs": null
+    },
+    {
+      "id": "open_002",
+      "type": "open_text",
+      "topic": "Endodoncie",
+      "question": "Vyjmenuj alespoň 3 indikace použití MTA.",
+      "modelAnswerCs": "Přímé překrytí pulpy; oprava perforace kořene; apexifikace.",
+      "acceptedAlternativesCs": [
+        "Pulpotomie",
+        "Oprava kořenové resorpce",
+        "Oprava perforace furkace",
+        "Vytvoření apikální bariéry u zubu s otevřeným apexem",
+        "Plnění široce otevřeného kořenového hrotu"
+      ],
+      "explanationCs": "MTA (Mineral Trioxide Aggregate) je biokompatibilní kalciumsilikátový materiál. Ve studijním textu jsou uvedeny také oprava resorpce radixu, oprava furkace a plnění široce otevřeného radixu.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "page": 17
+        }
+      ],
+      "externalReferences": [],
+      "evaluationMode": "self_review",
+      "expectedElementsCs": [
+        "uvést alespoň tři různé indikace"
+      ],
+      "verificationNoteCs": "Za správné uznat libovolné tři indikace ze seznamu v učebním textu. „Apexifikace“ a „vytvoření apikální bariéry“ jsou příbuzná označení; nepočítat je jako dvě nezávislé indikace."
+    },
+    {
+      "id": "open_003",
+      "type": "open_text",
+      "topic": "Dentální anatomie",
+      "question": "Napiš, co je to cingulum.",
+      "modelAnswerCs": "Cingulum je sklovinný val v krčkové oblasti dočasných molárů.",
+      "acceptedAlternativesCs": [
+        "Sklovinné zesílení v cervikální oblasti dočasných stoliček.",
+        "V obecné anatomii předních zubů je cingulum vyvýšenina v krčkové třetině orální (lingvální nebo palatinální) plochy korunky."
+      ],
+      "explanationCs": "Podle studijních materiálů se u dočasných molárů jako cingulum označuje krčkový sklovinný val. V obecné anatomii předních zubů má termín také jiné, širší použití.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "page": 18
+        },
+        {
+          "document": "study-base.docx",
+          "page": 37
+        }
+      ],
+      "externalReferences": [],
+      "evaluationMode": "self_review",
+      "expectedElementsCs": [
+        "sklovinný val",
+        "krčková oblast dočasných molárů"
+      ],
+      "verificationNoteCs": "Přednost má definice uvedená v dodaném studijním textu; obecný anatomický význam je ponechán jako uznatelná širší alternativa."
+    },
+    {
+      "id": "open_004",
+      "type": "open_text",
+      "topic": "Dentální anatomie",
+      "question": "Co obsahuje dentinový tubulus?",
+      "modelAnswerCs": "Dentinový tubulus obsahuje výběžek odontoblastu (Tomesovo vlákno) a dentinovou tekutinu.",
+      "acceptedAlternativesCs": [
+        "Výběžek odontoblastu a tubulární tekutinu.",
+        "Odontoblastický výběžek a dentinovou tekutinu."
+      ],
+      "explanationCs": "Odontoblastické výběžky jsou obklopeny dentinovou tekutinou. Pohyb této tekutiny souvisí s hydrodynamickou teorií dentinové citlivosti.",
+      "studyReferences": [],
+      "externalReferences": [
+        {
+          "title": "Dentinopulpální komplex (LF MU, výukový materiál)",
+          "url": "https://is.muni.cz/el/med/jaro2024/ZLOH041p/um/4._prakt.__8._tyden__-_Dentinopulpalni_komplex.pdf",
+          "language": "cs",
+          "relevance": "Výběžek odontoblastu, tekutina v periodontoblastickém prostoru."
+        },
+        {
+          "title": "Stavba dentinu (Univerzita Karlova, akademická práce)",
+          "url": "https://dspace.cuni.cz/bitstream/handle/20.500.11956/183518/130362882.pdf?isAllowed=y&sequence=1",
+          "language": "cs",
+          "relevance": "Tomesova vlákna v dentinových tubulech."
+        }
+      ],
+      "evaluationMode": "self_review",
+      "expectedElementsCs": [
+        "výběžek odontoblastu",
+        "dentinová (tubulární) tekutina"
+      ],
+      "verificationNoteCs": "Studijní text uvádí dentinové tubuly, ale jejich úplný obsah přímo nevyjmenovává; odpověď doplněna z českých univerzitních zdrojů."
+    },
+    {
+      "id": "open_005",
+      "type": "open_text",
+      "topic": "Dentální anatomie",
+      "question": "Napiš alespoň 3 anomálie tvaru zubů.",
+      "modelAnswerCs": "Dens invaginatus; dens evaginatus; taurodoncie.",
+      "acceptedAlternativesCs": [
+        "Geminace",
+        "Fúze zubů (srostlice)",
+        "Hutchinsonovy zuby",
+        "Morušové moláry",
+        "Čípkovitý zub",
+        "Carabelliho hrbolek",
+        "Konkrescence"
+      ],
+      "explanationCs": "Anomálie tvaru mohou postihovat korunku, kořen nebo obě části zubu. Uveďte alespoň tři konkrétní příklady z učebních materiálů.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "page": 37
+        }
+      ],
+      "externalReferences": [],
+      "evaluationMode": "self_review",
+      "expectedElementsCs": [
+        "uvést alespoň tři odlišné anomálie tvaru"
+      ],
+      "verificationNoteCs": "Za správné se uznávají další jednoznačné morfologické anomálie uvedené ve studijním textu. „Dens invaginatus“ a „dens in dente“ označují stejnou anomálii a nepočítají se dvakrát."
+    },
+    {
+      "id": "open_006",
+      "origin": "generated_from_study",
+      "type": "open_text",
+      "topic": "Endodoncie",
+      "question": "Vyjmenuj čtyři základní funkce zubní pulpy.",
+      "modelAnswerCs": "Formativní, obranná, vyživovací a nervová (senzorická) funkce.",
+      "acceptedAlternativesCs": [
+        "Tvorba primárního a sekundárního dentinu; tvorba terciálního dentinu; výživa; inervace."
+      ],
+      "explanationCs": "Formativní funkce souvisí s tvorbou dentinu, obranná s reakcí na podněty a tvorbou terciálního dentinu. Pulpa také vyživuje zub a zprostředkovává nervové vjemy.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Endodoncie I. – Zubní pulpa"
+        }
+      ],
+      "externalReferences": [],
+      "evaluationMode": "self_review",
+      "expectedElementsCs": [
+        "formativní",
+        "obranná",
+        "vyživovací",
+        "nervová"
+      ],
+      "verificationNoteCs": null
+    },
+    {
+      "id": "open_007",
+      "origin": "generated_from_study",
+      "type": "open_text",
+      "topic": "Endodoncie",
+      "question": "Uveď alespoň tři výhody použití kofferdamu při endodontickém ošetření.",
+      "modelAnswerCs": "Suché pracovní pole; ochrana před aspirací či spolknutím nástroje; ochrana měkkých tkání před výplachovými roztoky.",
+      "acceptedAlternativesCs": [
+        "Lepší přehlednost operačního pole",
+        "Nepřerušovaný výkon",
+        "Ochrana ošetřujícího před infekcí"
+      ],
+      "explanationCs": "Kofferdam izoluje ošetřovaný zub, chrání pacienta i zdravotnický personál a zlepšuje přehlednost pracovního pole.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Endodoncie II. – Kofferdam"
+        }
+      ],
+      "externalReferences": [],
+      "evaluationMode": "self_review",
+      "expectedElementsCs": [
+        "alespoň tři různé výhody"
+      ],
+      "verificationNoteCs": null
+    },
+    {
+      "id": "open_008",
+      "origin": "generated_from_study",
+      "type": "open_text",
+      "topic": "Ortodoncie",
+      "question": "Rozděl stěsnání zubů na tři typy a stručně uveď jejich příčinu.",
+      "modelAnswerCs": "Primární – nepoměr velikosti zubů a čelisti; sekundární – ztráta místa po předčasné ztrátě dočasného zubu; terciární – vzniká po ukončení vývoje.",
+      "acceptedAlternativesCs": [
+        "Primární stěsnání je dáno nepoměrem zubů a čelisti; sekundární ztrátou místa; terciární vzniká až po dokončení vývoje."
+      ],
+      "explanationCs": "Studijní materiál rozlišuje primární, sekundární a terciární stěsnání podle mechanismu či doby vzniku.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Ortodoncie – Stěsnání"
+        }
+      ],
+      "externalReferences": [],
+      "evaluationMode": "self_review",
+      "expectedElementsCs": [
+        "primární a jeho příčina",
+        "sekundární a jeho příčina",
+        "terciární a doba vzniku"
+      ],
+      "verificationNoteCs": null
+    },
+    {
+      "id": "open_009",
+      "origin": "generated_from_study",
+      "type": "open_text",
+      "topic": "Ortodoncie",
+      "question": "Jaké jsou tři Anglovy třídy mezičelistních vztahů?",
+      "modelAnswerCs": "I. třída – normookluze; II. třída – distookluze; III. třída – meziookluze.",
+      "acceptedAlternativesCs": [
+        "Angle I – normookluze; Angle II – distookluze; Angle III – meziookluze."
+      ],
+      "explanationCs": "Anglova klasifikace popisuje mezičelistní vztahy podle postavení prvních stálých molárů.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Ortodoncie – Mezičelistní vztahy (Anglova klasifikace)"
+        }
+      ],
+      "externalReferences": [],
+      "evaluationMode": "self_review",
+      "expectedElementsCs": [
+        "I = normookluze",
+        "II = distookluze",
+        "III = meziookluze"
+      ],
+      "verificationNoteCs": null
+    },
+    {
+      "id": "open_010",
+      "origin": "generated_from_study",
+      "type": "open_text",
+      "topic": "Pedostomatologie",
+      "question": "Uveď alespoň tři pravidla prevence kazu raného dětství (ECC) podle studijních materiálů.",
+      "modelAnswerCs": "Čistit zuby od prvního zubu dvakrát denně fluoridovou pastou; po večerním čištění nepodávat sladké nápoje ani jídlo; chodit na preventivní prohlídky od prořezání prvního zubu.",
+      "acceptedAlternativesCs": [
+        "Rodič zuby dítěte dočišťuje nebo kontroluje; mezi jídly se podává voda; pravidelná hygiena od prvního zubu."
+      ],
+      "explanationCs": "Prevence ECC zahrnuje časné zahájení hygieny, fluoridovou pastu, omezení častého příjmu cukrů a pravidelné stomatologické prohlídky.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Pedostomatologie – Základní pravidla v prevenci vzniku ECC"
+        }
+      ],
+      "externalReferences": [],
+      "evaluationMode": "self_review",
+      "expectedElementsCs": [
+        "alespoň tři různá pravidla prevence"
+      ],
+      "verificationNoteCs": null
+    },
+    {
+      "id": "open_011",
+      "origin": "generated_from_study",
+      "type": "open_text",
+      "topic": "Pedostomatologie",
+      "question": "Uveď dvě výhody nebo nevýhody skloionomerního pečetidla ve srovnání s fotokompozitním.",
+      "modelAnswerCs": "GIC uvolňuje fluoridy a při zhotovení je méně citlivý na vlhkost; ve srovnání s fotokompozitním pečetidlem má horší retenci a kratší životnost.",
+      "acceptedAlternativesCs": [
+        "Výhody: uvolňování fluoridů, menší citlivost na vlhkost.",
+        "Nevýhody: horší retence, kratší životnost."
+      ],
+      "explanationCs": "Studijní text zmiňuje dvě výhody GIC (fluoridy a snazší práci při vlhkosti) a dvě nevýhody (retenci a životnost).",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Pedostomatologie – Pečetění fissur"
+        }
+      ],
+      "externalReferences": [],
+      "evaluationMode": "self_review",
+      "expectedElementsCs": [
+        "alespoň dvě odlišné vlastnosti GIC ve srovnání s fotokompozitem"
+      ],
+      "verificationNoteCs": null
+    },
+    {
+      "id": "open_012",
+      "origin": "generated_from_study",
+      "type": "open_text",
+      "topic": "Diagnostika bolesti",
+      "question": "Uveď alespoň tři typické znaky alveolitidy po extrakci zubu podle studijního textu.",
+      "modelAnswerCs": "Bolest přibližně třetí den po extrakci; prázdné zubní lůžko bez krevní sraženiny; ostrá, tupá nebo vystřelující bolest, která může špatně reagovat na analgetika.",
+      "acceptedAlternativesCs": [
+        "Dolor post extractionem; alveolitis sicca s chybějící krevní sraženinou; bolest několik dnů po extrakci."
+      ],
+      "explanationCs": "Alveolitis sicca (suché lůžko) je v učebním textu spojena s chybějící krevní sraženinou a výraznou postextrakční bolestí.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Diagnostika bolesti – Dentální původ: alveolitis"
+        }
+      ],
+      "externalReferences": [],
+      "evaluationMode": "self_review",
+      "expectedElementsCs": [
+        "poextrakční bolest",
+        "obvykle kolem třetího dne",
+        "chybějící krevní sraženina"
+      ],
+      "verificationNoteCs": null
+    },
+    {
+      "id": "open_013",
+      "origin": "generated_from_study",
+      "type": "open_text",
+      "topic": "Anestézie",
+      "question": "Jaké základní typy lokální anestézie uvádí studijní text?",
+      "modelAnswerCs": "Terminální (povrchová a infiltrační), svodná a kmenová anestézie.",
+      "acceptedAlternativesCs": [
+        "Povrchová a infiltrační terminální anestézie; svodná anestézie; kmenová anestézie."
+      ],
+      "explanationCs": "Terminální anestézie působí na povrchu sliznice nebo v místě infiltrace; svodná a kmenová cílí na nervové struktury.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Anestézie – Rozdělení lokální anestézie"
+        }
+      ],
+      "externalReferences": [],
+      "evaluationMode": "self_review",
+      "expectedElementsCs": [
+        "terminální (povrchová a infiltrační)",
+        "svodná",
+        "kmenová"
+      ],
+      "verificationNoteCs": null
+    },
+    {
+      "id": "open_014",
+      "origin": "generated_from_study",
+      "type": "open_text",
+      "topic": "Dentální traumatologie",
+      "question": "Vyjmenuj tři typy resorpce kořene, které mohou vzniknout po úrazu zubu.",
+      "modelAnswerCs": "Povrchová resorpce, zánětlivá resorpce a náhradová resorpce.",
+      "acceptedAlternativesCs": [
+        "Povrchová, inflamatorní (zánětlivá) a substituční (náhradová) resorpce."
+      ],
+      "explanationCs": "Studijní text uvádí jako možné následky úrazu tři typy kořenové resorpce: povrchovou, zánětlivou a náhradovou.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Úrazy dočasných zubů – Následky úrazu"
+        }
+      ],
+      "externalReferences": [],
+      "evaluationMode": "self_review",
+      "expectedElementsCs": [
+        "povrchová",
+        "zánětlivá",
+        "náhradová"
+      ],
+      "verificationNoteCs": null
+    },
+    {
+      "id": "open_015",
+      "origin": "generated_from_study",
+      "type": "open_text",
+      "topic": "Temporomandibulární kloub",
+      "question": "Uveď alespoň tři nefarmakologická opatření při temporomandibulárních poruchách podle studijního textu.",
+      "modelAnswerCs": "Měkčí strava a menší sousta; omezení extrémních pohybů čelistí; odpočinek čelisti.",
+      "acceptedAlternativesCs": [
+        "Lokální teplo",
+        "Relaxační techniky a omezení stresu",
+        "Fyzioterapie čelistí – masáž a protahování",
+        "Okluzální stabilizační dlaha"
+      ],
+      "explanationCs": "Učební text uvádí edukaci a péči o sebe, režimová opatření, fyzioterapii a okluzální stabilizační dlahy jako součást léčby TMP.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Temporomandibulární poruchy – Léčba"
+        }
+      ],
+      "externalReferences": [],
+      "evaluationMode": "self_review",
+      "expectedElementsCs": [
+        "alespoň tři různá nefarmakologická opatření"
+      ],
+      "verificationNoteCs": null
+    }
+  ]
+}

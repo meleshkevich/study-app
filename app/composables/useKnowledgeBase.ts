@@ -1,5 +1,5 @@
 import type { KnowledgeBase, Question, OpenQuestion } from '~/types/knowledgeBase'
-import data from '~/assets/knowledge-base-v1-complete.json'
+import data from '~/assets/knowledge-base.json'
 
 const kb = data as KnowledgeBase
 

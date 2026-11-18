@@ -92,7 +92,7 @@ const optionClass = (key: OptionKey) => {
       </div>
       <div>
         <p class="text-xl font-bold text-slate-800">Všechny otázky hotovy!</p>
-        <p class="text-slate-500 mt-1">Prošel/a jsi všech 25 otázek.</p>
+        <p class="text-slate-500 mt-1">Prošel/a jsi všech {{ questions.length }} otázek.</p>
       </div>
       <button
         @click="startSession"

@@ -1,14 +1,14 @@
 import { describe, it, expect } from 'vitest'
-import kb from '../app/assets/knowledge-base-v1-complete.json'
+import kb from '../app/assets/knowledge-base.json'
 import { shuffle } from '../app/utils/shuffle'
 
 describe('knowledge base integrity', () => {
-  it('has exactly 25 closed questions', () => {
-    expect(kb.questions).toHaveLength(25)
+  it('has exactly 71 closed questions', () => {
+    expect(kb.questions).toHaveLength(71)
   })
 
-  it('has exactly 5 open questions', () => {
-    expect(kb.openQuestions).toHaveLength(5)
+  it('has exactly 15 open questions', () => {
+    expect(kb.openQuestions).toHaveLength(15)
   })
 
   it('every closed question has a valid correctAnswer (a, b, or c)', () => {
