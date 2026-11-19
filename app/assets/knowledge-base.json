@@ -29,7 +29,10 @@
     "U otevřených otázek je modelAnswerCs stručná zkoušková odpověď; acceptedAlternativesCs a expectedElementsCs jsou pomůcky pro vlastní kontrolu, nikoli striktní algoritmus hodnocení.",
     "Otázky gen_001–gen_012 jsou nově autorsky vytvořené podle sekcí studijního dokumentu, nikoli doslovné otázky ze zkouškových testů.",
     "Otázky gen_013–gen_022 byly nově sestaveny výhradně podle study-base.docx; nebyly nezávisle ověřovány externími zdroji.",
-    "Nové otázky gen_023–gen_034 jsou vytvořeny výhradně podle study-base.docx bez externí verifikace."
+    "Nové otázky gen_023–gen_034 jsou vytvořeny výhradně podle study-base.docx bez externí verifikace.",
+    "Otázky gen_057–gen_066 jsou nově vytvořeny výhradně podle study-base.docx; původní záznamy zůstaly beze změn.",
+    "Otázky gen_067–gen_076 byly vytvořeny výhradně podle study-base.docx bez externího ověřování; původní otázky nebyly měněny.",
+    "Otevřené otázky open_016–open_025 jsou vytvořeny pouze podle study-base.docx; obsahují vzorové odpovědi a hodnocení self_review, bez externího ověřování."
   ],
   "questions": [
     {
@@ -3731,6 +3734,1356 @@
       "verificationNoteCs": null,
       "needsClarification": false,
       "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_047",
+      "origin": "generated_from_study",
+      "type": "select_incorrect",
+      "topic": "Endodoncie",
+      "question": "Apexlokátor při stanovení pracovní délky, co je chybné tvrzení?",
+      "options": {
+        "a": "Může pomoci odhalit pravděpodobnou perforaci kořene.",
+        "b": "Jeho měření může být nepřesné u široce otevřeného apexu.",
+        "c": "Přítomnost krve nebo hnisu v kanálku podle podkladů zaručuje přesné měření."
+      },
+      "sources": [
+        {
+          "type": "study_material",
+          "document": "study-base.docx",
+          "section": "Endodoncie II. – Stanovení pracovní délky, apexlokátor"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanationCs": "Apexlokátor využívá elektrické měření; otevřený apex, krev či hnis mohou podle studijních materiálů zkreslit výsledek.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Endodoncie II. – Stanovení pracovní délky, apexlokátor"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "Materiál uvádí určení pravděpodobné perforace jako jednu z výhod apexlokátoru.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "true",
+          "explanationCs": "Široce otevřený apex je uveden mezi příčinami chybného výsledku.",
+          "correctedStatementCs": null
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Krev a hnis v kořenovém kanálku jsou v podkladech uvedeny mezi příčinami nepřesného měření.",
+          "correctedStatementCs": "Přítomnost krve nebo hnisu v kořenovém kanálku může zkreslit měření apexlokátorem."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": "Nová otázka sestavená výhradně podle study-base.docx; bez externího ověřování.",
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_048",
+      "origin": "generated_from_study",
+      "type": "select_correct",
+      "topic": "Endodoncie",
+      "question": "Výplach kořenových kanálků, co je správné tvrzení?",
+      "options": {
+        "a": "NaOCl se v podkladech uvádí především k odstranění anorganické složky smear layer.",
+        "b": "NaOCl rozpouští organickou složku a působí antimikrobiálně.",
+        "c": "EDTA se v podkladech označuje jako hlavní prostředek k rozpouštění nekrotické organické tkáně."
+      },
+      "sources": [
+        {
+          "type": "study_material",
+          "document": "study-base.docx",
+          "section": "Endodoncie II. – Výplachy: Chlordent (NaOCl), EDTA"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanationCs": "Podle učebního textu NaOCl rozpouští organickou složku a působí proti mikroorganismům; EDTA se používá na anorganickou složku.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Endodoncie II. – Výplachy: Chlordent (NaOCl), EDTA"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "false",
+          "explanationCs": "Anorganickou složku odstraňuje podle textu EDTA, nikoli primárně NaOCl.",
+          "correctedStatementCs": "K odstranění anorganické složky smear layer se používá EDTA."
+        },
+        "b": {
+          "verdict": "true",
+          "explanationCs": "Materiál uvádí rozpouštění organické složky i antibakteriální účinek NaOCl.",
+          "correctedStatementCs": null
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "EDTA je v podkladech popsána jako prostředek na anorganickou složku a smear layer.",
+          "correctedStatementCs": "EDTA odstraňuje především anorganickou složku; NaOCl rozpouští organické hmoty."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": "Nová otázka sestavená výhradně podle study-base.docx; bez externího ověřování.",
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_049",
+      "origin": "generated_from_study",
+      "type": "select_incorrect",
+      "topic": "Endodoncie",
+      "question": "Aktivace endodontického výplachu, co je chybné tvrzení?",
+      "options": {
+        "a": "Může zlepšit odstranění detritu a smear layer.",
+        "b": "Může se provádět ultrazvukově nebo manuálně gutaperčovým čepem.",
+        "c": "Jejím cílem je omezit kontakt výplachového roztoku s nepravidelnostmi kanálku."
+      },
+      "sources": [
+        {
+          "type": "study_material",
+          "document": "study-base.docx",
+          "section": "Endodoncie II. – Aktivace výplachu"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanationCs": "Aktivace výplachu má podle studijního textu podpořit účinnost irigace, odstranění detritu a přístup do nepravidelností kanálku.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Endodoncie II. – Aktivace výplachu"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "Učební text uvádí lepší odstranění nečistot a smear layer.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "true",
+          "explanationCs": "V materiálu je uvedena manuální aktivace gutaperčovým čepem i strojová aktivace ultrazvukem.",
+          "correctedStatementCs": null
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Aktivace naopak podporuje pohyb a účinek výplachu v systému kanálku.",
+          "correctedStatementCs": "Aktivace výplachu zlepšuje působení roztoku a odstraňování nečistot v kořenovém kanálku."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": "Nová otázka sestavená výhradně podle study-base.docx; bez externího ověřování.",
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_050",
+      "origin": "generated_from_study",
+      "type": "select_correct",
+      "topic": "Endodoncie",
+      "question": "Mechanické opracování metodou step-back, co je správné tvrzení?",
+      "options": {
+        "a": "Při step-back se všechny následující nástroje používají pouze na stále delší pracovní délku.",
+        "b": "Metoda step-back spočívá výhradně v obturaci bez opracování stěn kanálku.",
+        "c": "Při step-back se u dalších nástrojů postupně zkracuje pracovní délka."
+      },
+      "sources": [
+        {
+          "type": "study_material",
+          "document": "study-base.docx",
+          "section": "Endodoncie II. – Metody opracování: step-back"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanationCs": "Step-back je technika mechanického opracování se zkracováním pracovní délky u následujících nástrojů.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Endodoncie II. – Metody opracování: step-back"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "false",
+          "explanationCs": "U step-back se délka dalších nástrojů zkracuje, nikoli prodlužuje.",
+          "correctedStatementCs": "Při step-back se délka použití následujících nástrojů postupně zkracuje."
+        },
+        "b": {
+          "verdict": "false",
+          "explanationCs": "Jde o metodu opracování kanálku, ne samotného plnění.",
+          "correctedStatementCs": "Step-back je metoda mechanického opracování kořenového kanálku."
+        },
+        "c": {
+          "verdict": "true",
+          "explanationCs": "Podklady popisují step-back právě jako zkracování délky při opracování.",
+          "correctedStatementCs": null
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": "Nová otázka sestavená výhradně podle study-base.docx; bez externího ověřování.",
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_051",
+      "origin": "generated_from_study",
+      "type": "select_incorrect",
+      "topic": "Endodoncie",
+      "question": "Technika plnění kořenového kanálku centrálním čepem, co je chybné tvrzení?",
+      "options": {
+        "a": "Master čep se volí s ohledem na poslední ISO nástroj a pracovní délku.",
+        "b": "Nepřítomnost kondenzace může zhoršit vyplnění nepravidelností kanálku.",
+        "c": "Podle podkladů metoda centrálního čepu vždy dokonale zaplní všechny ramifikace bez rizika netěsností."
+      },
+      "sources": [
+        {
+          "type": "study_material",
+          "document": "study-base.docx",
+          "section": "Endodoncie II. – Metody plnění: technika centrálního čepu"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanationCs": "Studijní materiál uvádí u metody centrálního čepu možnost porozit, netěsností i nevyplněných ramifikací.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Endodoncie II. – Metody plnění: technika centrálního čepu"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "Master čep odpovídá poslednímu ISO nástroji a pracovní délce.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "true",
+          "explanationCs": "Materiál uvádí absenci kondenzace jako nevýhodu při vyplňování nepravidelností a ramifikací.",
+          "correctedStatementCs": null
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Text výslovně upozorňuje na porozity, netěsnosti a nevyplněné vedlejší kanálky.",
+          "correctedStatementCs": "Metoda centrálního čepu může vykazovat netěsnosti a nemusí vyplnit všechny nepravidelnosti a ramifikace."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": "Nová otázka sestavená výhradně podle study-base.docx; bez externího ověřování.",
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_052",
+      "origin": "generated_from_study",
+      "type": "select_correct",
+      "topic": "Endodoncie",
+      "question": "Nekróza a gangréna pulpy, co je správné tvrzení?",
+      "options": {
+        "a": "Gangréna je podle studijních materiálů druhotně infikovaná nekrotická pulpa.",
+        "b": "Gangréna označuje výhradně zdravou pulpu s normální vitalitou.",
+        "c": "Nekrotická pulpa má podle podkladů vždy fyziologickou odpověď na chlad."
+      },
+      "sources": [
+        {
+          "type": "study_material",
+          "document": "study-base.docx",
+          "section": "Diagnostika bolesti – Nekróza, gangréna pulpy"
+        }
+      ],
+      "correctAnswer": "a",
+      "explanationCs": "Gangréna je druhotně infikovaná nekrotická dřeň; nekrotická pulpa obvykle nereaguje na tepelné podněty.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Diagnostika bolesti – Nekróza, gangréna pulpy"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "Takto je gangréna definována ve studijním textu.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "false",
+          "explanationCs": "Gangréna předpokládá nekrózu a následnou infekci, nikoli zdravou dřeň.",
+          "correctedStatementCs": "Gangréna znamená druhotně infikovanou nekrotickou pulpu."
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "U nekrózy materiál uvádí chybějící odpověď na tepelné stimuly.",
+          "correctedStatementCs": "Nekrotická pulpa zpravidla nereaguje na tepelné podněty."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": "Nová otázka sestavená výhradně podle study-base.docx; bez externího ověřování.",
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_053",
+      "origin": "generated_from_study",
+      "type": "select_incorrect",
+      "topic": "Endodoncie",
+      "question": "Trepanační otvor při endodontickém ošetření, co je chybné tvrzení?",
+      "options": {
+        "a": "Při vytvoření přístupu se odstraňuje strop dřeňové dutiny.",
+        "b": "Cílem je získat přehled o dnu dřeňové dutiny a vchodech do kanálků.",
+        "c": "Při správné trepanaci musí zůstat strop dřeňové dutiny vždy zachován, aby byly vchody skryté."
+      },
+      "sources": [
+        {
+          "type": "study_material",
+          "document": "study-base.docx",
+          "section": "Endodoncie II. – Endodontické ošetření: trepanační otvor"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanationCs": "Trepanační otvor má umožnit přístup odstraněním stropu a přehlednou lokalizaci vstupů do kořenových kanálků.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Endodoncie II. – Endodontické ošetření: trepanační otvor"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "Studijní text uvádí odstranění stropu dřeňové dutiny.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "true",
+          "explanationCs": "Jedním z cílů je přehled o dnu a vchodech do kanálků.",
+          "correctedStatementCs": null
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Ponechání stropu by bránilo potřebnému přehledu o vstupu do kořenových kanálků.",
+          "correctedStatementCs": "Při trepanaci se odstraní strop dřeňové dutiny, aby byly přístupné a viditelné vchody do kanálků."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": "Nová otázka sestavená výhradně podle study-base.docx; bez externího ověřování.",
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_054",
+      "origin": "generated_from_study",
+      "type": "select_correct",
+      "topic": "Kariologie",
+      "question": "Bolest u ireverzibilní pulpitidy, co je správné tvrzení?",
+      "options": {
+        "a": "Bolest se objevuje výhradně při dotyku gingivy a nikdy nemá spontánní charakter.",
+        "b": "Může být spontánní, pulzující a přetrvávat i po odeznění tepelného podnětu.",
+        "c": "Typicky jde pouze o krátký podnětem vyvolaný vjem, který odezní během několika sekund."
+      },
+      "sources": [
+        {
+          "type": "study_material",
+          "document": "study-base.docx",
+          "section": "Diagnostika bolesti – Ireverzibilní pulpitis"
+        }
+      ],
+      "correctAnswer": "b",
+      "explanationCs": "Učební text popisuje u ireverzibilní pulpitidy spontánní, často pulzující a přetrvávající bolest, na rozdíl od krátké reakce u reverzibilní pulpitidy.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Diagnostika bolesti – Ireverzibilní pulpitis"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "false",
+          "explanationCs": "Studijní text zdůrazňuje spontánní bolest i výraznou reakci na tepelné podněty.",
+          "correctedStatementCs": "Ireverzibilní pulpitis se může projevovat spontánní a pulzující bolestí."
+        },
+        "b": {
+          "verdict": "true",
+          "explanationCs": "Spontánní bolest a přetrvávání po teplotním stimulu patří podle materiálu k typickému obrazu.",
+          "correctedStatementCs": null
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Krátká odeznívající reakce je v materiálu spojena spíše s reverzibilní pulpitidou.",
+          "correctedStatementCs": "Reverzibilní pulpitis mívá krátkou bolest vyvolanou podnětem, která odezní."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": "Nová otázka sestavená výhradně podle study-base.docx; bez externího ověřování.",
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_055",
+      "origin": "generated_from_study",
+      "type": "select_correct",
+      "topic": "Kariologie",
+      "question": "Kaz raného dětství (ECC), co je správné tvrzení?",
+      "options": {
+        "a": "Podle studijních materiálů postihuje ECC nejčastěji dolní stálé špičáky.",
+        "b": "ECC je v podkladech definován výhradně u pacientů starších než šest let.",
+        "c": "Podle studijního textu bývají při ECC často postiženy horní dočasné řezáky."
+      },
+      "sources": [
+        {
+          "type": "study_material",
+          "document": "study-base.docx",
+          "section": "Pedostomatologie – Early childhood caries (ECC)"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanationCs": "Materiál popisuje ECC u dětí do šesti let a jako častou lokalizaci uvádí horní dočasné řezáky s cirkulárním kazem.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Pedostomatologie – Early childhood caries (ECC)"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "false",
+          "explanationCs": "Text uvádí především horní řezáky, nikoli dolní stálé špičáky.",
+          "correctedStatementCs": "Při ECC jsou často postiženy horní dočasné řezáky."
+        },
+        "b": {
+          "verdict": "false",
+          "explanationCs": "Studijní definice ECC se vztahuje k dětem do šesti let.",
+          "correctedStatementCs": "ECC se podle studijních materiálů týká dětí do šesti let."
+        },
+        "c": {
+          "verdict": "true",
+          "explanationCs": "Horní řezáky jsou v materiálu označeny jako nejčastěji postižené zuby.",
+          "correctedStatementCs": null
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": "Nová otázka sestavená výhradně podle study-base.docx; bez externího ověřování.",
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_056",
+      "origin": "generated_from_study",
+      "type": "select_incorrect",
+      "topic": "Kariologie",
+      "question": "Papilitis jako příčina bolesti v ústech, co je chybné tvrzení?",
+      "options": {
+        "a": "Interdentální papila může být oteklá a při dotyku krvácet.",
+        "b": "Sousední zuby mohou zůstat vitální, přestože jsou citlivé na poklep.",
+        "c": "Typickým znakem papilitidy podle podkladů je vždy úplná nekróza pulpy obou sousedních zubů."
+      },
+      "sources": [
+        {
+          "type": "study_material",
+          "document": "study-base.docx",
+          "section": "Diagnostika bolesti – Dentální původ: papilitis"
+        }
+      ],
+      "correctAnswer": "c",
+      "explanationCs": "Papilitis se v učebních materiálech vyznačuje lokální bolestí a krvácejícím edémem papily; sousední zuby zůstávají vitální.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Diagnostika bolesti – Dentální původ: papilitis"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "Materiál popisuje edém papily s krvácením při dotyku.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "true",
+          "explanationCs": "Text uvádí oba sousední zuby jako vitální, přesto mohou reagovat na poklep.",
+          "correctedStatementCs": null
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Studijní text výslovně uvádí vitalitu sousedních zubů, nikoli jejich nekrózu.",
+          "correctedStatementCs": "U papilitidy mohou být oba sousední zuby vitální; typický je zánět a krvácení mezizubní papily."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": "Nová otázka sestavená výhradně podle study-base.docx; bez externího ověřování.",
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_057",
+      "origin": "generated_from_study",
+      "type": "select_correct",
+      "topic": "Endodoncie",
+      "question": "Fyzikální příčiny pulpitidy, co je správné tvrzení?",
+      "options": {
+        "a": "Přehřátí zubu při preparaci může být termickým podnětem poškozujícím pulpu.",
+        "b": "Fyzikální příčiny pulpitidy zahrnují výhradně bakteriální infekci.",
+        "c": "Chronické traumatické působení na pulpu nemůže souviset s nesprávně vyartikulovanou výplní."
+      },
+      "sources": [],
+      "correctAnswer": "a",
+      "explanationCs": "Studijní text řadí chybnou preparaci s vyšší teplotou, tlakem a vibracemi mezi fyzikální příčiny.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Endodoncie I. – Příčiny zánětů pulpy"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "Studijní text řadí chybnou preparaci s vyšší teplotou, tlakem a vibracemi mezi fyzikální příčiny.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "false",
+          "explanationCs": "Infekce je v textu samostatnou skupinou příčin, nikoli definicí fyzikálních vlivů.",
+          "correctedStatementCs": "Fyzikální příčiny zahrnují například trauma, termické a elektrogalvanické vlivy."
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Text zmiňuje špatně vyartikulovanou výplň jako příklad chronické traumatizace.",
+          "correctedStatementCs": "Nesprávně vyartikulovaná výplň může vést k chronické traumatizaci pulpy."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": "Nová otázka vytvořená podle uvedené části studijních materiálů; nejde o původní testovou otázku.",
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_058",
+      "origin": "generated_from_study",
+      "type": "select_incorrect",
+      "topic": "Endodoncie",
+      "question": "Cesty infekce vedoucí k pulpitidě, co je chybné tvrzení?",
+      "options": {
+        "a": "Infekce se může šířit přes spáru mezi výplní a zubem.",
+        "b": "Netěsná protetická práce může být zdrojem infekce pulpy.",
+        "c": "Podle studijního textu nemůže prasklina skloviny či dentinu souviset s infekční příčinou pulpitidy."
+      },
+      "sources": [],
+      "correctAnswer": "c",
+      "explanationCs": "Infrakce skloviny či dentinu je uvedena jako možná cesta související s infekčním postižením.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Endodoncie I. – Příčiny zánětů pulpy, infekce"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "Spára mezi výplní a zubem je výslovně uvedena v soupisu infekčních příčin.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "true",
+          "explanationCs": "Učební materiál zmiňuje netěsnou protetickou práci mezi možnými zdroji infekce.",
+          "correctedStatementCs": null
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Infrakce skloviny či dentinu je uvedena jako možná cesta související s infekčním postižením.",
+          "correctedStatementCs": "Prasklina skloviny nebo dentinu může souviset s infekčním poškozením pulpy."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": "Nová otázka vytvořená podle uvedené části studijních materiálů; nejde o původní testovou otázku.",
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_059",
+      "origin": "generated_from_study",
+      "type": "select_correct",
+      "topic": "Endodoncie",
+      "question": "Šíření neléčené pulpitidy, co je správné tvrzení?",
+      "options": {
+        "a": "Neléčená pulpitis se podle podkladů může šířit přes apex do periodoncia.",
+        "b": "Zánět z pulpy se šíří výhradně na povrch skloviny a nikdy nezasáhne periodoncium.",
+        "c": "Apikální periodontitis je definována pouze jako zánět gingivy bez postižení závěsného aparátu."
+      },
+      "sources": [],
+      "correctAnswer": "a",
+      "explanationCs": "Studijní text výslovně uvádí šíření neléčené pulpitidy přes apex do periodoncia.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Endodoncie I. – Periodontitis, etiologie"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "Studijní text výslovně uvádí šíření neléčené pulpitidy přes apex do periodoncia.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "false",
+          "explanationCs": "Periodontitis může navazovat na neléčený zánět zubní dřeně.",
+          "correctedStatementCs": "Neléčená pulpitis se může přes kořenový hrot šířit do periodoncia."
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Periodontitis podle textu postihuje vazy závěsného aparátu, kost a cement.",
+          "correctedStatementCs": "Periodontitis je zánětlivé postižení periodoncia, nikoli pouze gingivy."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": "Nová otázka vytvořená podle uvedené části studijních materiálů; nejde o původní testovou otázku.",
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_060",
+      "origin": "generated_from_study",
+      "type": "select_incorrect",
+      "topic": "Endodoncie",
+      "question": "Termoplastická injekce gutaperči, co je chybné tvrzení?",
+      "options": {
+        "a": "Gutaperča se při této technice rozehřívá mimo dutinu ústní.",
+        "b": "Plastická gutaperča se následně zavádí do kořenového kanálku injekčním způsobem.",
+        "c": "Tato technika spočívá výhradně v zavedení suché, nezahřáté gutaperči bez její plastifikace."
+      },
+      "sources": [],
+      "correctAnswer": "c",
+      "explanationCs": "Podstatou této metody je práce s rozehřátou, plastickou gutaperčou.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Endodoncie II. – Metody plnění kořenového kanálku, termoplastická injekce"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "Učební text uvádí zahřívání gutaperči mimo ústa.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "true",
+          "explanationCs": "Podle studijních materiálů se zahřátá gutaperča zavádí do kanálku injekčně.",
+          "correctedStatementCs": null
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Podstatou této metody je práce s rozehřátou, plastickou gutaperčou.",
+          "correctedStatementCs": "Při termoplastické injekci se gutaperča rozehřeje mimo ústa a v plastickém stavu se zavádí do kanálku."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": "Nová otázka vytvořená podle uvedené části studijních materiálů; nejde o původní testovou otázku.",
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_061",
+      "origin": "generated_from_study",
+      "type": "select_correct",
+      "topic": "Endodoncie",
+      "question": "Hydroxid vápenatý při endodontickém ošetření, co je správné tvrzení?",
+      "options": {
+        "a": "Podle studijního textu nemá žádný dezinfekční účinek.",
+        "b": "Podle studijního textu má antimikrobiální účinek a používá se jako provizorní řešení.",
+        "c": "Podle studijního textu je dlouhodobá opakovaná aplikace bez jakýchkoli nevýhod."
+      },
+      "sources": [],
+      "correctAnswer": "b",
+      "explanationCs": "Text uvádí dezinfekční působení Ca(OH)2 i jeho využití jako provizorního řešení.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Endodoncie II. – Ca(OH)2 jako endodontický materiál"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "false",
+          "explanationCs": "Materiál uvádí dezinfekční, antimikrobiální, protivirový a protiplísňový účinek.",
+          "correctedStatementCs": "Hydroxid vápenatý má podle podkladů antimikrobiální a dezinfekční účinek."
+        },
+        "b": {
+          "verdict": "true",
+          "explanationCs": "Text uvádí dezinfekční působení Ca(OH)2 i jeho využití jako provizorního řešení.",
+          "correctedStatementCs": null
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Mezi nevýhodami text zmiňuje oslabení dentinu a obtížné odstranění z tubulů.",
+          "correctedStatementCs": "Dlouhodobá opakovaná aplikace Ca(OH)2 je podle podkladů nevhodná."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": "Nová otázka vytvořená podle uvedené části studijních materiálů; nejde o původní testovou otázku.",
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_062",
+      "origin": "generated_from_study",
+      "type": "select_incorrect",
+      "topic": "Endodoncie",
+      "question": "Materiál MTA a zabarvení zubu, co je chybné tvrzení?",
+      "options": {
+        "a": "Studijní materiál zmiňuje šedou diskoloraci jako možné estetické riziko MTA.",
+        "b": "Oxid bismutitý je v textu uveden mezi faktory souvisejícími s diskolorací.",
+        "c": "MTA podle podkladů nikdy nemůže ovlivnit barvu zubu, ani ve frontálním úseku."
+      },
+      "sources": [],
+      "correctAnswer": "c",
+      "explanationCs": "Text výslovně upozorňuje na možné zabarvení zubu u MTA.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Endodoncie II. – MTA, vlastnosti a nežádoucí diskolorace"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "Učební text uvádí šedou diskoloraci, zvláště esteticky problematickou ve frontálním úseku.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "true",
+          "explanationCs": "Materiál zmiňuje oxid bismutitý ve vztahu k diskoloraci.",
+          "correctedStatementCs": null
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Text výslovně upozorňuje na možné zabarvení zubu u MTA.",
+          "correctedStatementCs": "Použití MTA může podle podkladů souviset se šedou diskolorací zubu."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": "Nová otázka vytvořená podle uvedené části studijních materiálů; nejde o původní testovou otázku.",
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_063",
+      "origin": "generated_from_study",
+      "type": "select_correct",
+      "topic": "Pedostomatologie",
+      "question": "Pulpektomie dočasného zubu, co je správné tvrzení?",
+      "options": {
+        "a": "Resorpce více než jedné třetiny kořene je v podkladech uvedena mezi kontraindikacemi.",
+        "b": "Nerekonstruovatelná korunka zubu je podle materiálu ideální podmínkou k pulpektomii.",
+        "c": "Rozsáhlá perforace dna dřeňové dutiny potvrzuje podle materiálu vhodnost pulpektomie."
+      },
+      "sources": [],
+      "correctAnswer": "a",
+      "explanationCs": "Studijní text uvádí resorpci více než 1/3 kořene mezi kontraindikacemi pulpektomie dočasného zubu.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Endodontické ošetření dočasných zubů – Pulpektomie, kontraindikace"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "Studijní text uvádí resorpci více než 1/3 kořene mezi kontraindikacemi pulpektomie dočasného zubu.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "false",
+          "explanationCs": "Nerekonstruovatelná korunka je v textu uvedena mezi kontraindikacemi.",
+          "correctedStatementCs": "Nerekonstruovatelná korunka je kontraindikací pulpektomie dočasného zubu."
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Rozsáhlá perforace dna dřeňové dutiny je uvedena mezi kontraindikacemi.",
+          "correctedStatementCs": "Rozsáhlá perforace dna dřeňové dutiny je kontraindikací pulpektomie dočasného zubu."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": "Nová otázka vytvořená podle uvedené části studijních materiálů; nejde o původní testovou otázku.",
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_064",
+      "origin": "generated_from_study",
+      "type": "select_incorrect",
+      "topic": "Kariologie",
+      "question": "Stupně hlubokého zubního kazu, co je chybné tvrzení?",
+      "options": {
+        "a": "Karies profunda označuje hluboký zubní kaz.",
+        "b": "Karies pulpae proxima znamená kaz blízký zubní dřeni.",
+        "c": "Karies ad pulpam penetrans označuje výhradně povrchovou skvrnu bez průniku do dřeně."
+      },
+      "sources": [],
+      "correctAnswer": "c",
+      "explanationCs": "Označení ad pulpam penetrans se v podkladech vztahuje ke kazu penetrujícímu do pulpy.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Diagnostika bolesti – Dentální původ: zubní kaz"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "V textu je profunda uvedena jako hluboký kaz.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "true",
+          "explanationCs": "Text překládá pulpae proxima jako kaz blízký dřeni.",
+          "correctedStatementCs": null
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Označení ad pulpam penetrans se v podkladech vztahuje ke kazu penetrujícímu do pulpy.",
+          "correctedStatementCs": "Karies ad pulpam penetrans je kaz penetrující do zubní dřeně."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": "Nová otázka vytvořená podle uvedené části studijních materiálů; nejde o původní testovou otázku.",
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_065",
+      "origin": "generated_from_study",
+      "type": "select_correct",
+      "topic": "Kariologie",
+      "question": "Bolest související se zubním kazem, co je správné tvrzení?",
+      "options": {
+        "a": "Podle podkladů se může objevovat po jídle a po vyčištění zubů ustávat.",
+        "b": "Podle podkladů se vždy projevuje pouze po extrakci zubu.",
+        "c": "Bolest při kazu podle podkladů nikdy nesouvisí s jídlem."
+      },
+      "sources": [],
+      "correctAnswer": "a",
+      "explanationCs": "Ve studijním textu je u bolesti zubního kazu uveden vznik po jídle a ústup po vyčištění.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Diagnostika bolesti – Dentální původ: zubní kaz, klinické projevy"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "Ve studijním textu je u bolesti zubního kazu uveden vznik po jídle a ústup po vyčištění.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "false",
+          "explanationCs": "Poextrakční bolest je odlišná skupina obtíží, nikoli jediný projev kazu.",
+          "correctedStatementCs": "Bolest související se zubním kazem se může objevovat ještě před extrakcí."
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Materiál výslovně uvádí vztah bolesti zubního kazu k jídlu.",
+          "correctedStatementCs": "Bolest při kazu se může podle materiálů objevovat po jídle."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": "Nová otázka vytvořená podle uvedené části studijních materiálů; nejde o původní testovou otázku.",
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_066",
+      "origin": "generated_from_study",
+      "type": "select_correct",
+      "topic": "Kariologie",
+      "question": "Rozdílný výskyt ECC na horních a dolních zubech, co je správné tvrzení?",
+      "options": {
+        "a": "Dolní dočasné zuby jsou podle materiálů častěji postiženy, protože se nikdy nedostávají do styku se slinami.",
+        "b": "Podle podkladů jazyk a sliny přispívají k samočištění dolních zubů.",
+        "c": "Podle podkladů jazyk a sliny nemají žádný vztah k rozdílnému postižení zubů při ECC."
+      },
+      "sources": [],
+      "correctAnswer": "b",
+      "explanationCs": "Takto text vysvětluje, proč bývají dolní zuby oproti horním méně postiženy.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Pedostomatologie – Early childhood caries (ECC), lokalizace a ochranné faktory"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "false",
+          "explanationCs": "Studijní text uvádí, že dolní zuby se více samočistí jazykem a jsou ve slině.",
+          "correctedStatementCs": "Podle učebních materiálů jsou dolní zuby více samočišťovány jazykem a slinami."
+        },
+        "b": {
+          "verdict": "true",
+          "explanationCs": "Takto text vysvětluje, proč bývají dolní zuby oproti horním méně postiženy.",
+          "correctedStatementCs": null
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Text právě jazyk a sliny zmiňuje mezi vysvětleními odlišného postižení.",
+          "correctedStatementCs": "Jazyk a sliny přispívají podle podkladů k samočištění dolních zubů."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": "Nová otázka vytvořená podle uvedené části studijních materiálů; nejde o původní testovou otázku.",
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_067",
+      "origin": "generated_from_study",
+      "type": "select_correct",
+      "topic": "Endodoncie",
+      "question": "Histopatologické dělení akutních pulpitid, co je správné tvrzení?",
+      "options": {
+        "a": "Zahrnuje hypermii, serózní a purulentní formu.",
+        "b": "Zahrnuje výhradně zdravou a nekrotickou pulpu.",
+        "c": "Rozlišuje pouze pulpitis chronica aperta a clausa."
+      },
+      "sources": [],
+      "correctAnswer": "a",
+      "explanationCs": "Podle histopatologického dělení se akutní pulpitidy rozlišují na hypermickou, serózní a hnisavou formu.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Endodoncie I. – Histopatologické dělení pulpitid"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "Uvedené tři formy tvoří v podkladech skupinu akutních pulpitid.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "false",
+          "explanationCs": "Zdravá a nekrotická pulpa patří do Baumeho klinického dělení, nikoli mezi akutní histopatologické formy.",
+          "correctedStatementCs": "Akutní pulpitidy zahrnují hypermickou, serózní a purulentní formu."
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Aperta a clausa jsou chronické histopatologické formy.",
+          "correctedStatementCs": "Aperta a clausa jsou chronické histopatologické formy pulpitidy."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": "Nová otázka vytvořená výhradně podle study-base.docx; nejde o původní testovou otázku.",
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_068",
+      "origin": "generated_from_study",
+      "type": "select_incorrect",
+      "topic": "Endodoncie",
+      "question": "Dentikly v zubní pulpě, co je chybné tvrzení?",
+      "options": {
+        "a": "Vznikají patologickým zvápenatěním pulpální tkáně.",
+        "b": "Vyskytují se podle učebního textu častěji v korunkové pulpě.",
+        "c": "Při endodontickém ošetření nikdy nepředstavují komplikaci."
+      },
+      "sources": [],
+      "correctAnswer": "c",
+      "explanationCs": "Dentikly jsou kalcifikace pulpy, častější v korunkové části, a mohou komplikovat endodontické ošetření.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Endodoncie I. – Dentikly"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "Dentikly jsou v podkladech popsány jako patologické kalcifikace pulpy.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "true",
+          "explanationCs": "Studijní text uvádí jejich častější výskyt v koronární pulpě.",
+          "correctedStatementCs": null
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Kalcifikace mohou ztěžovat přístup a orientaci při endodontickém ošetření.",
+          "correctedStatementCs": "Dentikly mohou komplikovat endodontické ošetření."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": "Nová otázka vytvořená výhradně podle study-base.docx; nejde o původní testovou otázku.",
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_069",
+      "origin": "generated_from_study",
+      "type": "select_correct",
+      "topic": "Endodoncie",
+      "question": "Pořadí výplachů kořenového kanálku, co je podle studijního protokolu správné?",
+      "options": {
+        "a": "EDTA → NaOCl → EDTA.",
+        "b": "NaOCl → EDTA → NaOCl.",
+        "c": "Pouze fyziologický roztok bez dalších výplachů."
+      },
+      "sources": [],
+      "correctAnswer": "b",
+      "explanationCs": "Studijní protokol uvádí nejprve NaOCl, poté EDTA a na závěr opět NaOCl.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Endodoncie – Výplachový protokol"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "false",
+          "explanationCs": "Uvedené pořadí neodpovídá protokolu z učebního textu.",
+          "correctedStatementCs": "Studijní protokol uvádí pořadí NaOCl → EDTA → NaOCl."
+        },
+        "b": {
+          "verdict": "true",
+          "explanationCs": "Toto je pořadí výplachů výslovně vypsané v materiálu.",
+          "correctedStatementCs": null
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Studijní protokol zahrnuje NaOCl a EDTA, nikoli pouze fyziologický roztok.",
+          "correctedStatementCs": "Studijní protokol kombinuje výplach NaOCl a EDTA v uvedeném pořadí."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": "Nová otázka vytvořená výhradně podle study-base.docx; nejde o původní testovou otázku.",
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_070",
+      "origin": "generated_from_study",
+      "type": "select_incorrect",
+      "topic": "Endodoncie",
+      "question": "Sondáž kořenových kanálků, co je chybné tvrzení?",
+      "options": {
+        "a": "Pro počáteční sondáž se podle podkladů používají ruční nástroje C-Pilot.",
+        "b": "Při sondáži jsou v textu uvedeny mimo jiné velikosti ISO 08, 10 a 15.",
+        "c": "K sondáži se podle podkladů používá výhradně gumový lešticí kalíšek."
+      },
+      "sources": [],
+      "correctAnswer": "c",
+      "explanationCs": "Pro počáteční sondáž materiál uvádí ruční C-Pilot malé velikosti ISO, nikoliv pomůcky pro leštění korunek.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Endodoncie II. – Lokalizace vchodů a sondáž kanálků"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "C-Pilot je v učebním textu přímo uveden při sondáži kanálků.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "true",
+          "explanationCs": "Materiál výslovně uvádí malé velikosti ISO 06, 08, 10 a 15.",
+          "correctedStatementCs": null
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Lešticí kalíšek není endodontický nástroj pro sondáž kanálku.",
+          "correctedStatementCs": "Pro sondáž kanálků se podle podkladů používají ruční endodontické nástroje C-Pilot."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": "Nová otázka vytvořená výhradně podle study-base.docx; nejde o původní testovou otázku.",
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_071",
+      "origin": "generated_from_study",
+      "type": "select_correct",
+      "topic": "Endodoncie",
+      "question": "Vertikální kondenzace gutaperči, co je správné tvrzení?",
+      "options": {
+        "a": "Používá se výhradně studený kovový čep bez gutaperči.",
+        "b": "Jde o techniku, při které se podle podkladů používá nahřátá gutaperča.",
+        "c": "Tato metoda slouží pouze ke stanovení délky zubní korunky."
+      },
+      "sources": [],
+      "correctAnswer": "b",
+      "explanationCs": "V přehledu metod plnění je vertikální kondenzace spojena s nahřátou gutaperčou.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Endodoncie – Metody plnění kořenového kanálku"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "false",
+          "explanationCs": "Vertikální kondenzace v materiálu pracuje s gutaperčou, nikoli výhradně s kovovým čepem.",
+          "correctedStatementCs": "Vertikální kondenzace je metoda plnění kořenového kanálku nahřátou gutaperčou."
+        },
+        "b": {
+          "verdict": "true",
+          "explanationCs": "Nahřátá gutaperča je v podkladech uvedena jako znak vertikální kondenzace.",
+          "correctedStatementCs": null
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Metoda se týká kořenové výplně, nikoli měření korunky.",
+          "correctedStatementCs": "Vertikální kondenzace je metoda plnění kořenového kanálku."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": "Nová otázka vytvořená výhradně podle study-base.docx; nejde o původní testovou otázku.",
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_072",
+      "origin": "generated_from_study",
+      "type": "select_incorrect",
+      "topic": "Endodoncie",
+      "question": "Komunikace zubní pulpy s periodonciem, co je chybné tvrzení?",
+      "options": {
+        "a": "Pulpa komunikuje s periodonciem přes foramen apicale.",
+        "b": "Komunikace může probíhat také postranními a akcesorními kanálky.",
+        "c": "Pulpa je od periodoncia zcela oddělena a nemá s ním žádnou anatomickou komunikaci."
+      },
+      "sources": [],
+      "correctAnswer": "c",
+      "explanationCs": "Podklady uvádějí komunikaci přes apikální otvor i přes laterální a akcesorní kanálky.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Endodoncie I. – Zubní pulpa"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "Apikální otvor je uveden jako cesta komunikace pulpy s periodonciem.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "true",
+          "explanationCs": "Materiál výslovně doplňuje postranní a akcesorní kanálky.",
+          "correctedStatementCs": null
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Anatomická komunikace přes apikální i vedlejší kanálky existuje.",
+          "correctedStatementCs": "Pulpa komunikuje s periodonciem přes foramen apicale i vedlejší kanálky."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": "Nová otázka vytvořená výhradně podle study-base.docx; nejde o původní testovou otázku.",
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_073",
+      "origin": "generated_from_study",
+      "type": "select_correct",
+      "topic": "Endodoncie",
+      "question": "Elektrogalvanické vlivy na pulpu, co je správné tvrzení?",
+      "options": {
+        "a": "Podle podkladů mohou různé kovy v dutině ústní působit jako fyzikální dráždivý faktor.",
+        "b": "Elektrogalvanické vlivy jsou v učebním textu označeny jako jediný typ bakteriální infekce.",
+        "c": "Elektrogalvanické dráždění podle podkladů vzniká pouze působením sladkých nápojů."
+      },
+      "sources": [],
+      "correctAnswer": "a",
+      "explanationCs": "Elektrogalvanické působení různých kovů v ústech je ve studijním textu řazeno mezi fyzikální příčiny poškození pulpy.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Endodoncie I. – Fyzikální příčiny zánětu pulpy"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "Učební text uvádí různé kovy v dutině ústní jako elektrogalvanický podnět.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "false",
+          "explanationCs": "Text elektrogalvanické vlivy řadí mezi fyzikální, nikoli infekční příčiny.",
+          "correctedStatementCs": "Elektrogalvanické vlivy patří mezi fyzikální příčiny podráždění pulpy."
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Sladké nápoje nejsou v podkladech definicí elektrogalvanického dráždění.",
+          "correctedStatementCs": "Elektrogalvanické vlivy mohou souviset s přítomností různých kovů v dutině ústní."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": "Nová otázka vytvořená výhradně podle study-base.docx; nejde o původní testovou otázku.",
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_074",
+      "origin": "generated_from_study",
+      "type": "select_correct",
+      "topic": "Kariologie",
+      "question": "Definice časného dětského zubního kazu (ECC), co je podle učebního textu správné?",
+      "options": {
+        "a": "ECC se podle podkladů definuje výhradně jako kaz stálých zubů po 18. roce věku.",
+        "b": "ECC vyžaduje postižení minimálně šesti stálých molárů.",
+        "c": "ECC zahrnuje přítomnost alespoň jednoho kariézního, chybějícího nebo zaplombovaného zubu u dítěte mladšího šesti let."
+      },
+      "sources": [],
+      "correctAnswer": "c",
+      "explanationCs": "Učební text definuje ECC přítomností alespoň jednoho kariézního, chybějícího nebo zaplombovaného zubu u dítěte do šesti let.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Pedostomatologie – Early childhood caries (ECC), definice"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "false",
+          "explanationCs": "ECC je v materiálu vymezen věkem dítěte do šesti let.",
+          "correctedStatementCs": "ECC je podle učebního textu kaz raného dětství u dětí do šesti let."
+        },
+        "b": {
+          "verdict": "false",
+          "explanationCs": "Definice nepožaduje šest stálých molárů.",
+          "correctedStatementCs": "ECC znamená přítomnost alespoň jednoho postiženého zubu podle definice v učebním textu."
+        },
+        "c": {
+          "verdict": "true",
+          "explanationCs": "Toto odpovídá definici ECC v dodaném učebním textu.",
+          "correctedStatementCs": null
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": "Nová otázka vytvořená výhradně podle study-base.docx; nejde o původní testovou otázku.",
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_075",
+      "origin": "generated_from_study",
+      "type": "select_incorrect",
+      "topic": "Pedostomatologie",
+      "question": "Vitální pulpotomie dočasného zubu, co je podle studijního postupu chybné tvrzení?",
+      "options": {
+        "a": "Při výkonu je popsána dezinfekce a zastavení krvácení pomocí NaOCl.",
+        "b": "Materiál zdůrazňuje pro posouzení krvácení rozhodující čas pět minut.",
+        "c": "Podle podkladů se krvácení při pulpotomii nikdy nehodnotí a okamžitě se pokračuje bez hemostázy."
+      },
+      "sources": [],
+      "correctAnswer": "c",
+      "explanationCs": "Učební postup zahrnuje dezinfekci a zástavu krvácení, přičemž zdůrazňuje čas pěti minut.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Endodontické ošetření dočasných zubů – Pulpotomie, postup"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "true",
+          "explanationCs": "V učebním postupu je uvedena hemostáza a dezinfekce NaOCl.",
+          "correctedStatementCs": null
+        },
+        "b": {
+          "verdict": "true",
+          "explanationCs": "Podklady výslovně uvádějí rozhodující čas pět minut.",
+          "correctedStatementCs": null
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Krvácení a jeho zastavení je v postupu důležité, nikoliv ignorované.",
+          "correctedStatementCs": "Při vitální pulpotomii se podle podkladů provádí hemostáza a hodnotí se její průběh."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": "Nová otázka vytvořená výhradně podle study-base.docx; nejde o původní testovou otázku.",
+      "needsClarification": false,
+      "scoringMode": "single_select"
+    },
+    {
+      "id": "gen_076",
+      "origin": "generated_from_study",
+      "type": "select_correct",
+      "topic": "Endodoncie",
+      "question": "Materiál Vitapex pro plnění kořenových kanálků dočasných zubů, co je správné tvrzení?",
+      "options": {
+        "a": "Vitapex je podle podkladů výhradně směsí amalgámu a zlata.",
+        "b": "Vitapex je v učebním textu uveden jako kombinace jodoformu a hydroxidu vápenatého.",
+        "c": "Vitapex je název pouze pro kofferdamovou blánu."
+      },
+      "sources": [],
+      "correctAnswer": "b",
+      "explanationCs": "Ve výčtu materiálů pro výplně dočasných zubů je Vitapex označen jako směs jodoformu a Ca(OH)2.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Endodontické ošetření dočasných zubů – Materiály pro plnění kořenů"
+        }
+      ],
+      "externalReferences": [],
+      "optionAssessments": {
+        "a": {
+          "verdict": "false",
+          "explanationCs": "Amalgám a zlato nejsou uvedeny jako složky Vitapexu.",
+          "correctedStatementCs": "Vitapex je podle učebního textu směs jodoformu a hydroxidu vápenatého."
+        },
+        "b": {
+          "verdict": "true",
+          "explanationCs": "V materiálu je Vitapex uveden u kombinace jodoformu a Ca(OH)2.",
+          "correctedStatementCs": null
+        },
+        "c": {
+          "verdict": "false",
+          "explanationCs": "Kofferdam je izolační pomůcka, nikoli materiál Vitapex.",
+          "correctedStatementCs": "Vitapex je materiál používaný pro kořenové výplně dočasných zubů."
+        }
+      },
+      "keyBasis": "supported_study",
+      "verificationNoteCs": "Nová otázka vytvořená výhradně podle study-base.docx; nejde o původní testovou otázku.",
+      "needsClarification": false,
+      "scoringMode": "single_select"
     }
   ],
   "openQuestions": [
@@ -4138,6 +5491,266 @@
       "evaluationMode": "self_review",
       "expectedElementsCs": [
         "alespoň tři různá nefarmakologická opatření"
+      ],
+      "verificationNoteCs": null
+    },
+    {
+      "id": "open_016",
+      "origin": "generated_from_study",
+      "type": "open_text",
+      "topic": "Endodoncie",
+      "question": "Vyjmenuj čtyři formy chronické apikální periodontitidy uvedené ve studijních materiálech.",
+      "modelAnswerCs": "Periodontitis apicalis chronica circumscripta, difusa, cystogranulom a radikulární cysta.",
+      "acceptedAlternativesCs": [
+        "Ohraničené apikální projasnění (circumscripta), neohraničené apikální projasnění (difusa), cystogranulom, radikulární cysta."
+      ],
+      "explanationCs": "Chronická apikální periodontitida je ve studijním textu rozdělena do čtyř forem; circumscripta a difusa se liší ohraničením apikálního projasnění.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Endodoncie I. – Periodontitis apicalis chronica"
+        }
+      ],
+      "externalReferences": [],
+      "evaluationMode": "self_review",
+      "expectedElementsCs": [
+        "circumscripta",
+        "difusa",
+        "cystogranulom",
+        "radikulární cysta"
+      ],
+      "verificationNoteCs": null
+    },
+    {
+      "id": "open_017",
+      "origin": "generated_from_study",
+      "type": "open_text",
+      "topic": "Endodoncie",
+      "question": "Uveď alespoň tři indikace primárního endodontického ošetření (RCT) podle studijního textu.",
+      "modelAnswerCs": "Pulpitis, periodontitis a resorpce radixu.",
+      "acceptedAlternativesCs": [
+        "Endodontické ošetření před protetickým ošetřením.",
+        "Zánět pulpy; zánět periodoncia; resorpce kořene."
+      ],
+      "explanationCs": "Učební materiál mezi indikacemi RCT uvádí pulpitidu, periodontitidu, resorpci kořene a některé situace před protetickým ošetřením. Nejde o indikace revize již provedeného RCT.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Endodoncie II. – Indikace endodontického ošetření (RCT)"
+        }
+      ],
+      "externalReferences": [],
+      "evaluationMode": "self_review",
+      "expectedElementsCs": [
+        "alespoň tři různé indikace z uvedeného seznamu"
+      ],
+      "verificationNoteCs": null
+    },
+    {
+      "id": "open_018",
+      "origin": "generated_from_study",
+      "type": "open_text",
+      "topic": "Endodoncie",
+      "question": "Vyjmenuj tři metody mechanického opracování kořenových kanálků uvedené v učebním textu.",
+      "modelAnswerCs": "Step-back, step-down a balanced force technika.",
+      "acceptedAlternativesCs": [
+        "Technika step back; technika step down; balanced force."
+      ],
+      "explanationCs": "Studijní materiál uvádí tři přístupy k mechanickému opracování; samotná metoda step-back již byla v uzavřených otázkách, zde se ověřuje znalost celého výčtu.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Endodoncie II. – Metody opracování"
+        }
+      ],
+      "externalReferences": [],
+      "evaluationMode": "self_review",
+      "expectedElementsCs": [
+        "step-back",
+        "step-down",
+        "balanced force"
+      ],
+      "verificationNoteCs": null
+    },
+    {
+      "id": "open_019",
+      "origin": "generated_from_study",
+      "type": "open_text",
+      "topic": "Endodoncie",
+      "question": "Uveď alespoň tři projevy nebo nálezy apikálního abscesu podle studijních materiálů.",
+      "modelAnswerCs": "Velmi bolestivý hnisavý zánět; vyklenutí v oblasti kořene příčinného zubu; při perforaci periostu odtok hnisu píštělí s následnou úlevou.",
+      "acceptedAlternativesCs": [
+        "Silná bolest; hnisavý zánět; vyklenutí u příčinného zubu; píštěl s odtokem hnisu."
+      ],
+      "explanationCs": "Materiál popisuje apikální absces jako bolestivý hnisavý proces s vyklenutím v oblasti kořene; po vytvoření píštěle a odtoku hnisu může dojít k úlevě.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Endodoncie I. – Apikální absces"
+        }
+      ],
+      "externalReferences": [],
+      "evaluationMode": "self_review",
+      "expectedElementsCs": [
+        "silná bolest",
+        "hnisavý zánět či vyklenutí",
+        "odtok hnisu píštělí a možná úleva"
+      ],
+      "verificationNoteCs": null
+    },
+    {
+      "id": "open_020",
+      "origin": "generated_from_study",
+      "type": "open_text",
+      "topic": "Endodoncie",
+      "question": "Vyjmenuj alespoň tři možnosti postendodontické rekonstrukce zubu uvedené v materiálech.",
+      "modelAnswerCs": "Přímá fotokompozitní dostavba; nepřímá fotokompozitní dostavba; čepová nástavba s korunkou.",
+      "acceptedAlternativesCs": [
+        "Litý kořenový čep.",
+        "FRC čep s jádrem a korunkou.",
+        "Přímá dostavba fotokompozitem."
+      ],
+      "explanationCs": "Výběr postendodontické rekonstrukce závisí zejména na množství zbývajících tvrdých zubních tkání a na ferrule effect; učební text vypočítává přímé i nepřímé dostavby a čepové nástavby.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Endodoncie II. – Postendodontické ošetření"
+        }
+      ],
+      "externalReferences": [],
+      "evaluationMode": "self_review",
+      "expectedElementsCs": [
+        "alespoň tři různé možnosti rekonstrukce"
+      ],
+      "verificationNoteCs": null
+    },
+    {
+      "id": "open_021",
+      "origin": "generated_from_study",
+      "type": "open_text",
+      "topic": "Endodoncie",
+      "question": "Uveď dvě příčiny zabarvení endodonticky ošetřeného zubu, které zmiňují studijní materiály.",
+      "modelAnswerCs": "Průnik krve z pulpy do dentinových tubulů po traumatu či vitální exstirpaci; zabarvení způsobené endodontickými výplňovými materiály.",
+      "acceptedAlternativesCs": [
+        "Rozklad krve s ukládáním hemoglobinu v dentinových tubulech; zbytky kořenových výplňových materiálů v dřeňové dutině."
+      ],
+      "explanationCs": "Podklady spojují vnitřní zabarvení s rozkladem krve v dentinových tubulech a s materiály použitými při endodontickém ošetření; proto zdůrazňují vyčištění cavum pulpae.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Endodoncie II. – Bělení zubů se zaplněným kanálkem"
+        }
+      ],
+      "externalReferences": [],
+      "evaluationMode": "self_review",
+      "expectedElementsCs": [
+        "rozklad krve / hemoglobin v dentinových tubulech",
+        "endodontické výplňové materiály"
+      ],
+      "verificationNoteCs": null
+    },
+    {
+      "id": "open_022",
+      "origin": "generated_from_study",
+      "type": "open_text",
+      "topic": "Endodoncie",
+      "question": "Vyjmenuj alespoň tři kontraindikace pulpektomie dočasného zubu podle studijních materiálů.",
+      "modelAnswerCs": "Rozsáhlá perforace dna dřeňové dutiny; nerekonstruovatelná korunka zubu; zevní resorpce radixu.",
+      "acceptedAlternativesCs": [
+        "Cysta.",
+        "Resorpce více než jedné třetiny kořene."
+      ],
+      "explanationCs": "Učební text uvádí uvedené stavy mezi kontraindikacemi pulpektomie dočasných zubů; jde o jinou otázku než kontraindikace vitální pulpotomie.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Endodontické ošetření dočasných zubů – Pulpektomie, kontraindikace"
+        }
+      ],
+      "externalReferences": [],
+      "evaluationMode": "self_review",
+      "expectedElementsCs": [
+        "alespoň tři různé kontraindikace ze seznamu"
+      ],
+      "verificationNoteCs": null
+    },
+    {
+      "id": "open_023",
+      "origin": "generated_from_study",
+      "type": "open_text",
+      "topic": "Endodoncie",
+      "question": "Podle jakých klinických a rentgenových znaků se hodnotí úspěch pulpektomie dočasného zubu? Uveď alespoň tři.",
+      "modelAnswerCs": "RTG nález se nezvětšuje; není bolest; není otok ani píštěl.",
+      "acceptedAlternativesCs": [
+        "Stabilní RTG nález a nepřítomnost bolesti, otoku a píštěle."
+      ],
+      "explanationCs": "Ve studijním textu je úspěch vyjádřen nezvětšujícím se RTG nálezem a absencí klinických symptomů.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Endodontické ošetření dočasných zubů – Pulpektomie, úspěch"
+        }
+      ],
+      "externalReferences": [],
+      "evaluationMode": "self_review",
+      "expectedElementsCs": [
+        "nezvětšující se RTG nález",
+        "bez bolesti",
+        "bez otoku",
+        "bez píštěle"
+      ],
+      "verificationNoteCs": null
+    },
+    {
+      "id": "open_024",
+      "origin": "generated_from_study",
+      "type": "open_text",
+      "topic": "Kariologie",
+      "question": "Vyjmenuj alespoň tři komplikace neléčeného zubního kazu u dětí kromě zánětu pulpy.",
+      "modelAnswerCs": "Subperiostální nebo submukózní absces; zánět mízních uzlin; předčasná ztráta dočasných zubů s ortodontickými následky.",
+      "acceptedAlternativesCs": [
+        "Zánět kolemčelistních prostorů.",
+        "Poškození zárodku stálého zubu (Turnerův zub).",
+        "Obtíže s příjmem potravy.",
+        "Poruchy výslovnosti po předčasné ztrátě zubů.",
+        "Foetor ex ore."
+      ],
+      "explanationCs": "Učební text popisuje nejen pulpitidu, ale také šíření zánětu, abscesy, následky pro stálý chrup i funkční komplikace předčasné ztráty dočasných zubů.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Pedostomatologie – Komplikace zubního kazu"
+        }
+      ],
+      "externalReferences": [],
+      "evaluationMode": "self_review",
+      "expectedElementsCs": [
+        "alespoň tři odlišné komplikace mimo samotnou pulpitidu"
+      ],
+      "verificationNoteCs": null
+    },
+    {
+      "id": "open_025",
+      "origin": "generated_from_study",
+      "type": "open_text",
+      "topic": "Kariologie",
+      "question": "Uveď alespoň tři materiály nebo skupiny materiálů uváděné pro ošetření hlubokého kazu blízkého dřeni.",
+      "modelAnswerCs": "MTA, hydroxid vápenatý (Ca(OH)₂) a Kalcimol.",
+      "acceptedAlternativesCs": [
+        "Adhezivní technologie.",
+        "Materiály na bázi hydroxidu vápenatého, MTA a adhezivní materiály."
+      ],
+      "explanationCs": "V oddílu „Dentální původ: hluboký kaz“ jsou uvedeny MTA, Ca(OH)₂, Kalcimol a adhezivní technologie. Výběr ošetření souvisí se stavem pulpy a klinickou situací.",
+      "studyReferences": [
+        {
+          "document": "study-base.docx",
+          "section": "Diagnostika bolesti – Dentální původ: hluboký kaz"
+        }
+      ],
+      "externalReferences": [],
+      "evaluationMode": "self_review",
+      "expectedElementsCs": [
+        "alespoň tři položky ze seznamu: MTA, Ca(OH)₂, Kalcimol, adhezivní technologie"
       ],
       "verificationNoteCs": null
     }

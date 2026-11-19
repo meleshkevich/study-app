@@ -3,12 +3,12 @@ import kb from '../app/assets/knowledge-base.json'
 import { shuffle } from '../app/utils/shuffle'
 
 describe('knowledge base integrity', () => {
-  it('has exactly 71 closed questions', () => {
-    expect(kb.questions).toHaveLength(71)
+  it('has exactly 101 closed questions', () => {
+    expect(kb.questions).toHaveLength(101)
   })
 
-  it('has exactly 15 open questions', () => {
-    expect(kb.openQuestions).toHaveLength(15)
+  it('has exactly 25 open questions', () => {
+    expect(kb.openQuestions).toHaveLength(25)
   })
 
   it('every closed question has a valid correctAnswer (a, b, or c)', () => {
